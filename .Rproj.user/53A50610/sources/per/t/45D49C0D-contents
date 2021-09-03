@@ -1,0 +1,456 @@
+---
+title: "SPC Exp1"
+author: "Mrudula"
+date: "r format(Sys.time(), '%d %B,%Y')`"
+output:
+  html_document:
+    theme: readable
+    highlight: breezedark
+    toc: yes
+    toc_float: yes
+    fig_caption: yes
+    fig_width: 7
+    fig_height: 4
+    code_folding: hide
+  pdf_document:
+    toc: yes
+---
+
+**This contains the analysis script of the first experiment in the Sensory pre conditioning series**
+
+```{r}
+# loading libraries
+library(tidyverse)
+library(plyr)
+library(ez)
+library(schoRsch)
+library(knitr)
+library(pander)
+library(rmarkdown)
+library(reshape2)
+library(here)
+library(ggpubr)
+library(Rmisc)
+library(lme4)
+library(nlme)
+library(lmerTest)
+library(car)
+library(ggdist)
+
+#set_here()
+
+#import data
+Exp1data <- read.csv(here("Data", "Exp1_fulldataset.csv"))
+
+
+```
+
+## DATA PREPARATION ##
+
+- Unnecessary columns are removed from the main dataframe
+- The Reaction Time columns are saved again such that the values from Phase 1 (Saved as SSResp.rt) and values from Phase 2 and 3 (saved as REsponse.rt) are combined into one column named RT_Trials. So a dummy variable is created to identify rows with Phase 1 RT and Phase2&3 RT to later combine together as RT_Trials.
+- Similar process is done for Accuracy
+- Error Rate column is created
+
+
+```{r}
+# remove unnecessary columns
+Exp1data <- Exp1data %>%
+  select(-X,-consentResp.keys,-consentResp.rt,-Proceed.keys,-Proceed.rt,-AttnChkResp.keys,-AttnChkResp.corr,-AttnChkResp.rt,-Attention.thisRepN,-Attention.thisTrialN,-Attention.ran,-Attention.thisIndex,-Attention.thisN,-proceed1.keys,-proceed1.rt,-proceed2.keys,-proceed2.rt,-InstRep.ran,-InstRep.thisIndex,-InstRep.thisN,-InstRep.thisRepN,-InstRep.thisTrialN,-NextPhaseResp.keys,-NextPhaseResp.rt,-AttentionTask2.ran,-AttentionTask2.thisRepN,-AttentionTask2.thisIndex,-AttentionTask2.thisN,-AttentionTask2.thisTrialN,-InstRep2.thisRepN,-InstRep2.thisTrialN,-InstRep2.thisN,-InstRep2.thisIndex,-InstRep2.ran,-PracRepeat.thisRepN,-PracRepeat.ran,-PracRepeat.thisTrialN,-PracRepeat.thisN,-PracRepeat.thisIndex)
+#prepare RT
+Exp1data <- separate(Exp1data, col = Response.rt, into = c("RT3_Trials", "RT3_secondary"), sep = ',')
+Exp1data$RT3_Trials <- Exp1data$RT3_Trials%>%
+  str_replace_all("\\[|\\]","")%>%
+  as.double(Exp1data$RT3_Trials)
+Exp1data$RT3_Trials <- 1000*(Exp1data$RT3_Trials)
+
+#prepare RT from Phase 2
+Exp1data <- separate(Exp1data, col = SSResp.rt, into = c("RT2_Trials", "RT2_secondary"), sep = ',')
+Exp1data$RT2_Trials <- Exp1data$RT2_Trials%>%
+  str_replace_all("\\[|\\]","")%>%
+  as.double(Exp1data$RT2_Trials)
+Exp1data$RT2_Trials <- 1000*(Exp1data$RT2_Trials)
+
+#creating a dummy variable to pick wherever the RTs are from Phase 1 and which are from Phase 2 & 3
+Exp1data$RTdummy <- NA
+Exp1data$RTdummy <- ifelse(is.na(Exp1data$RT2_Trials) == FALSE,1,NA)
+Exp1data$RTdummy <- ifelse(is.na(Exp1data$RT3_Trials)==FALSE,2,Exp1data$RTdummy)
+
+#combining all important RTs 
+Exp1data <- Exp1data %>%
+  mutate(RT_Trials = ifelse((RTdummy == 1), RT2_Trials,ifelse((RTdummy == 2),RT3_Trials,NA)))
+
+## same for accuracy
+Exp1data$ACCdummy <- ifelse(is.na(Exp1data$SSResp.corr)==FALSE,1,NA)
+Exp1data$ACCdummy <- ifelse(is.na(Exp1data$Response.corr)==FALSE,2,Exp1data$ACCdummy)
+
+Exp1data <- Exp1data %>%
+  mutate(ACC_trials = ifelse((ACCdummy == 1),SSResp.corr,ifelse((ACCdummy == 2),Response.corr,NA)))
+
+Exp1data$ER <- 1-Exp1data$ACC_trials
+
+Exp1data$Condition[(Exp1data$Phase == 3.1 & is.na(Exp1data$Stim2)==TRUE)] <- "S1-R Transfer"
+
+
+
+Exp1Aware <- Exp1data %>%
+ filter(str_detect(AwareQuestion, "Type"))
+
+Exp1ER <- aggregate(data = Exp1data, ER~PROLIFIC_PID, mean)
+Exp1ER$Perf <- na.omit(Exp1data$Performance)
+table(Exp1data$Performance)
+
+Exp1data <- Exp1data%>%drop_na(RT_Trials)
+Exp1RT <- aggregate(data = Exp1data, RT_Trials~PROLIFIC_PID, mean)
+Exp1overallagg <- merge(Exp1ER,Exp1RT, by = "PROLIFIC_PID")
+
+Exp1data <- Exp1data %>%
+  filter(PROLIFIC_PID != "612f8847fa13bca455f7bca1") # very slow RT
+Exp1data <- Exp1data %>%
+  filter(PROLIFIC_PID != "6102fbc5a76f1755012ed31f") #chose to return
+
+Exp1Aware <- Exp1Aware %>%
+  filter(PROLIFIC_PID != "612f8847fa13bca455f7bca1") # very slow RT
+Exp1Aware <- Exp1Aware %>%
+  filter(PROLIFIC_PID != "6102fbc5a76f1755012ed31f") #chose to return
+```
+
+## DESCRIPTIVES
+
+```{r}
+pander(summary(Exp1data$Age),style = 'rmarkdown', caption = "Age")
+
+pander(summary(Exp1data$RT_Trials), style = 'rmarkdown',caption = 'Mean RT')
+pander(table(Exp1data$ACC_trials),style = 'rmarkdown',caption = "Accuracy")
+
+pander(round(table(Exp1data$ACC_trials)/nrow(Exp1data)*100, digits = 3), style = 'rmarkdown', caption = "Percentage of errors")
+```
+
+## OUTLIERS AND EXCLUSIONS  
+
+```{r}
+#incorrect trials RT are not used
+
+Exp1data$RT_Trials[Exp1data$ACC_trials==0] <- NA
+
+#creating function to remove the outliers and farouts
+computeTukeys <- function(x){
+  P25 <- quantile(x$RT_Trials, .25, na.rm = TRUE, type = 6) #type = 6 -> used in SPSS
+  P75 <- quantile(x$RT_Trials, .75, na.rm = TRUE, type = 6)
+  x$Outlier <- P75 + 1.5*(P75 - P25)
+  x$Farouts <- P75 + 3.0*(P75 - P25)
+  return(x)
+}
+
+
+#identifying the outliers and farouts at individual level
+Exp1data <- ddply(Exp1data, .(PROLIFIC_PID), computeTukeys)
+
+#creating new column with RT trials after removing outliers/farouts
+Exp1data$RT_ifo <- Exp1data$RT_Trials #ifo refers to individual farouts
+Exp1data$RT_io <- Exp1data$RT_Trials #io refers to individual outliers
+
+
+#RTs above outliers and farouts and very fast RTs below 200ms
+Exp1data$RT_ifo[Exp1data$RT_ifo > Exp1data$Farouts|Exp1data$RT_ifo < 200] <- NA
+Exp1data$RT_io[Exp1data$RT_io > Exp1data$Outlier|Exp1data$RT_io < 200] <- NA
+
+#printing the summary table for RTs columns in rmarkdown style after exluding outliers and farouts
+pander(summary(Exp1data$RT_ifo), style = 'rmarkdown', caption = "Summary of RT after removing Farouts")
+pander(summary(Exp1data$RT_io), style = 'rmarkdown', caption = "Summary of RT after removing Outliers")
+```
+
+## Manipulation Checks
+
+### 1. Phase 1
+
+First checking whether participants picked up on the association by looking at the contingency effect in Phase 1.
+
+T.test result shows that there is a significant difference between valid and invalid trials $t = 6.156, p < .001$. The mean difference is *~32.7 ms*
+This also replicates at the Error Rate level with a significatn difference between valid and invalid trials $t = 3.388, p = .001$. 
+
+> Both the results show that the performance is better in valid than in invalid trials indicating that the participants picked up on the association between S1-s2 and used the predictive property of S1
+
+
+```{r phase1, warning=FALSE, message=FALSE}
+#aggregating the RT and ER in Phase 1
+Exp1_phase1 <- aggregate(cbind(ER, RT_io)~PROLIFIC_PID+Validity,data = Exp1data,subset = (Phase == "1"),mean, na.rm = TRUE, na.action = NULL)
+
+# Paired T test in RTs between Valid and invalid Pairs
+pander((t.test(data = Exp1_phase1, RT_io~Validity,paired = TRUE)), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials-excluding outliers")
+
+valmain <- ggplot(Exp1_phase1, aes(x=Validity, y=RT_io))+
+    geom_line(aes(group = 1, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  geom_point(aes(group = Validity, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  scale_color_manual(values = c("deepskyblue4","cadetblue3"))+coord_cartesian(ylim = c(500,550))+
+  theme_classic()+xlab("S1-S2 pair validity")+ylab("ReactionTime (in ms)")+ggtitle("Mean of valid and invalid trials in Phase 1")+theme(text = element_text(size = 20))
+valmain
+
+# for error rate
+pander((t.test(data = Exp1_phase1, ER~Validity,paired = TRUE)), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials-excluding outliers")
+
+valmainer <- ggplot(Exp1_phase1, aes(x=Validity, y=ER))+
+    geom_line(aes(group = 1, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  geom_point(aes(group = Validity, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  scale_color_manual(values = c("deepskyblue4","cadetblue3"))+coord_cartesian(ylim = c(0,0.15))+
+  theme_classic()+xlab("S1-S2 pair validity")+ylab("Error Rate")+ggtitle("Mean of valid and invalid trials")+theme(text = element_text(size = 20))
+valmainer
+```
+
+### 2. Phase 2: S2-R contingency check
+
+Paired t test shows that there is a contingency effect while comparing valid and invalid trials which is significant $t = 10.6, p <.001$ with a mean difference of ~39 ms
+
+Similarly while looking at errors as well there is a significant diference $t = 4.50, p < .001$
+
+This shows that the participation successfully bound the contingent response with the S2. 
+
+
+```{r phase2, message=FALSE, warning=FALSE}
+# aggregate file with RT and ER for phase 2
+
+Exp1_phase2 <- aggregate(data = Exp1data, cbind(ER,RT_io)~PROLIFIC_PID+Validity,subset = (Phase == "2"),mean, na.action = NULL, na.rm = TRUE)
+
+#paired ttest
+pander((t.test(data = Exp1_phase2, RT_io~Validity,paired = TRUE)), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials-excluding outliers")
+
+valmain2 <- ggplot(Exp1_phase2, aes(x=Validity, y=RT_io))+
+    geom_line(aes(group = 1, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  geom_point(aes(group = Validity, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  scale_color_manual(values = c("deepskyblue4","cadetblue3"))+coord_cartesian(ylim = c(450,520))+
+  theme_classic()+xlab("S2-Colour Validity")+ylab("ReactionTime (in ms)")+ggtitle("Mean of valid and invalid trials in Phase2")+theme(text = element_text(size = 20))
+valmain2
+
+## for Error RAte
+pander((t.test(data = Exp1_phase2, ER~Validity,paired = TRUE)), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials-excluding outliers")
+
+valmain2er <- ggplot(Exp1_phase2, aes(x=Validity, y=ER))+
+    geom_line(aes(group = 1, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  geom_point(aes(group = Validity, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  scale_color_manual(values = c("deepskyblue4","cadetblue3"))+coord_cartesian(ylim = c(0,0.15))+
+  theme_classic()+xlab("S2-Colour Validity")+ylab("Error Rate")+ggtitle("Mean of valid and invalid trials in Phase 2")+theme(text = element_text(size = 20))
+valmain2er
+```
+
+### Phase 3.1 : Checking for sustainance of S2-R Contingency effect
+
+WHile only looking at the S2 trials, a t.test was conducted to compare the performance in the valid and invalid trials to check for a possible contingency effect.
+
+The t.test revealed that there is a significant difference between valid and invalid trials $t = 4.32, p <.001$  for RT and $t = 4.47,p < 0.001$ for ER.
+
+```{r Phase3.1 S2, message=FALSE, warning=FALSE}
+Exp1_phase3.1 <- aggregate(data = Exp1data, cbind(RT_io,ER)~PROLIFIC_PID+Validity+Condition,subset = (Phase == "3.1"),mean, na.rm = TRUE, na.action = NULL)
+Exp1_phase3.1 <- Exp1_phase3.1 %>%
+  dplyr::rename(StimulusType = Condition)
+pander((t.test(data = Exp1_phase3.1, RT_io~Validity,paired = TRUE)), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials-excluding outliers")
+
+valmain3 <- ggplot(subset(Exp1_phase3.1,StimulusType == "S2-R Transfer"), aes(x=Validity, y=RT_io))+
+    geom_line(aes(group = 1, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  geom_point(aes(group = Validity, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  scale_color_manual(values = c("deepskyblue4","cadetblue3"))+coord_cartesian(ylim = c(475, 525))+
+  theme_classic()+ylab("ReactionTime (in ms)")+ggtitle("Mean of valid and invalid trials in Phase 3.1 for S2")+theme(text = element_text(size = 20))
+valmain3
+
+## Error Rate
+pander((t.test(data = Exp1_phase3.1, ER~Validity,paired = TRUE)), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials-excluding outliers")
+valmain3er <- ggplot(subset(Exp1_phase3.1, StimulusType == "S2-R Transfer"), aes(x=Validity, y=ER))+
+    geom_line(aes(group = 1, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  geom_point(aes(group = Validity, color = "deepskyblue4"),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  scale_color_manual(values = c("deepskyblue4","cadetblue3"))+coord_cartesian(ylim = c(0,0.15))+
+  theme_classic()+ylab("Error Rate")+ggtitle("Mean ER of valid and invalid trials in Phase 3.1 for S2")+theme(text = element_text(size = 20))
+valmain3er
+```
+
+## Transfer ANALYSES
+
+### 1. Comparing contingency effects in Phase 3.1
+
+#### Reaction Time
+
+ANOVA is conducted in the aggregated data with Phase 3.1 with the factors of validity and the Stimulus Type. The results show that there is a significant effect of Validity $F(1,71) = 22.68, p < .001$ and there is also a main effect of StimulusType $F = 6.34, p = 0.015$ which shows that transfer to S1 was not evident as S2 remained the only condition where contingency effect existed.
+This is also seen in the significant interaction between validity and stimulus type $F = 40.09, p < .001$
+
+
+#### Error Rate
+
+In the case of Error rate, there is still the main effect of validity, $F = 20.01, p <.001$ but no main effect of stimulus type $F = 2.06, p = .156$. There is still a significant interaction between validity and stimulus type, $F = 7.79, p = .007$. The plot shows that **in contrast to the RT** the trend in S1-R transfer looks promising however is weaker.
+
+More insight on the difference using paired t test per Stimulus Type is listed below.
+
+
+```{r 3.1transfer, message=FALSE, warning=FALSE}
+
+## REaction Time
+anova31RT <- ezANOVA(data = Exp1_phase3.1,
+                   dv = RT_io,
+                   wid = PROLIFIC_PID,
+                   within = .(Validity,StimulusType),
+                   detailed = TRUE) 
+anova_out(anova31RT)
+
+inter3.1 <- ggplot(Exp1_phase3.1, aes(x=Validity, y=RT_io,color = StimulusType))+
+    geom_line(aes(group = StimulusType, color = StimulusType),size = 1,stat = "summary", fun = "mean")+
+  geom_point(aes(group = StimulusType),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  scale_color_manual(values = c("deepskyblue4","cadetblue3"))+coord_cartesian(ylim = c(450,550))+
+  theme_classic()+ylab("Error Rate")+ggtitle("Mean of valid and invalid trials in Phase 3.1")+theme(text = element_text(size = 20))
+inter3.1
+
+barplotmean <- summarySEwithin(Exp1_phase3.1, measurevar= "RT_io", withinvars=c("Validity","StimulusType"),
+                                 idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
+Stimvalmean <- ggplot(barplotmean, aes(x=StimulusType, y=RT_io,fill = Validity))+
+  geom_bar(stat = "identity",position = position_dodge())+
+  geom_errorbar(aes(ymin = RT_io - ci, ymax = RT_io + ci),width = .1, size = 1,position = position_dodge(.9))+
+    # geom_line(aes(group = Saliency, linetype = Saliency),size = 1,stat = "summary", fun = "mean",)+
+    # geom_point(stat = "summary", fun = "mean", aes(shape = Saliency))+
+  scale_fill_manual(values = c("dodgerblue4","cadetblue3"))+coord_cartesian(ylim = c(400,550))+ggtitle("Valid and Invalid trials mean \n per Stimulus Type in Phase 3.1")+
+  theme_classic()+ylab("ReactionTime (in ms)")+xlab("StimulusType")+theme(text = element_text(size = 20))
+Stimvalmean
+
+## Error Rate
+anova31ER <- ezANOVA(data = Exp1_phase3.1,
+                   dv = ER,
+                   wid = PROLIFIC_PID,
+                   within = .(Validity,StimulusType),
+                   detailed = TRUE) 
+anova_out(anova31ER)
+
+inter3.1er <- ggplot(Exp1_phase3.1, aes(x=Validity, y=ER,color = StimulusType))+
+    geom_line(aes(group = StimulusType, color = StimulusType),size = 1,stat = "summary", fun = "mean")+
+  geom_point(aes(group = StimulusType),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  scale_color_manual(values = c("deepskyblue4","cadetblue3"))+coord_cartesian(ylim = c(0,0.15))+
+  theme_classic()+ylab("Error Rate")+ggtitle("Mean of valid and invalid trials in Phase 3.1")+theme(text = element_text(size = 20))
+inter3.1er
+
+barplotmeanER <- summarySEwithin(Exp1_phase3.1, measurevar="ER", withinvars=c("Validity","StimulusType"),
+                                 idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
+StimvalmeanER <- ggplot(barplotmeanER, aes(x=StimulusType, y=ER,fill = Validity))+
+  geom_bar(stat = "identity",position = position_dodge())+
+  geom_errorbar(aes(ymin = ER - ci, ymax = ER + ci),width = .1, size = 1,position = position_dodge(.9))+
+    # geom_line(aes(group = Saliency, linetype = Saliency),size = 1,stat = "summary", fun = "mean",)+
+    # geom_point(stat = "summary", fun = "mean", aes(shape = Saliency))+
+  scale_fill_manual(values = c("dodgerblue4","cadetblue3"))+coord_cartesian(ylim = c(0,0.15))+ggtitle("Valid and Invalid trials mean \n per Stimulus Type in Phase 3.1")+
+  theme_classic()+ylab("ErrorRate")+xlab("StimulusType")+theme(text = element_text(size = 20))
+StimvalmeanER
+
+
+```
+#### Differences per Stimulus Type
+
+1. For S1 the difference in RT is not signficant $t = -0.94, p = 0.34$ but in the ER is it *almost* significant $t = 1.97, p = 0.052$ and since this is a directional hypothesis, it would reach significance in a one tailed test.
+
+2. For S2 it is highly significant in both RT and ER as seen in Manipulation Check, point 3.
+
+```{r ttest3.1, message=FALSE, warning=FALSE}
+pander(t.test(data = Exp1_phase3.1, RT_io~Validity,subset = (StimulusType == "S1-R Transfer"), paired = TRUE), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials for S1 in Phase 3.1-excluding outliers")
+
+## ER
+pander(t.test(data = Exp1_phase3.1, ER~Validity,subset = (StimulusType == "S1-R Transfer"), paired = TRUE), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials for S1 in Phase 3.1-excluding outliers")
+```
+
+### 2. Comparing contingency learning effects in Phase 3.2
+
+The transfer effect is tested again in this Phase 3.2 where there is no contingency for S2 and all the stimuli have 50% contingency.
+
+#### Reaction Time
+
+Similar to Phase 3.1, the main effect of validity $F = 13.11, p = .001$ and interaction between Validity and StimulusType $F = 9.24, p =.003$ are significant but not the main effect of StimulusType, $F = 1.64, p = .205$
+
+#### Error Rate
+
+THe validity effect has weakened $F = 2.38, p = .160$ and the interaction is borderline significant and weakened compared to 3.1 and $F = 3.86, p = .053$. 
+
+```{r Phase3.2, message=FALSE, warning=FALSE}
+Exp1_phase3.2 <- aggregate(data = Exp1data, cbind(RT_io,ER)~PROLIFIC_PID+Validity+Condition,subset = (Phase == "3.2"),mean, na.rm = TRUE, na.action = NULL)
+Exp1_phase3.2 <- Exp1_phase3.2 %>%
+  dplyr::rename(StimulusType = Condition)
+
+##ANOVA
+anova3.2RT <- ezANOVA(data = Exp1_phase3.2,
+                      dv = RT_io,
+                      wid = PROLIFIC_PID,
+                      within = .(Validity,StimulusType),
+                      detailed = TRUE)
+anova_out(anova3.2RT)
+
+inter3.2 <- ggplot(Exp1_phase3.2, aes(x=Validity, y=RT_io,color = StimulusType))+
+    geom_line(aes(group = StimulusType, color = StimulusType),size = 1,stat = "summary", fun = "mean")+
+  geom_point(aes(group = StimulusType),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  scale_color_manual(values = c("deepskyblue4","cadetblue3"))+coord_cartesian(ylim = c(450,550))+
+  theme_classic()+ylab("Error Rate")+ggtitle("Mean of valid and invalid trials in Phase 3.2")+theme(text = element_text(size = 20))
+inter3.2
+
+barplotmean3.2 <- summarySEwithin(Exp1_phase3.2, measurevar= "RT_io", withinvars=c("Validity","StimulusType"),
+                                 idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
+Stimvalmean2 <- ggplot(barplotmean3.2, aes(x=StimulusType, y=RT_io,fill = Validity))+
+  geom_bar(stat = "identity",position = position_dodge())+
+  geom_errorbar(aes(ymin = RT_io - ci, ymax = RT_io + ci),width = .1, size = 1,position = position_dodge(.9))+
+    # geom_line(aes(group = Saliency, linetype = Saliency),size = 1,stat = "summary", fun = "mean",)+
+    # geom_point(stat = "summary", fun = "mean", aes(shape = Saliency))+
+  scale_fill_manual(values = c("dodgerblue4","cadetblue3"))+coord_cartesian(ylim = c(400,550))+ggtitle("Valid and Invalid trials mean \n per Stimulus Type in Phase 3.2")+
+  theme_classic()+ylab("ReactionTime (in ms)")+xlab("StimulusType")+theme(text = element_text(size = 20))
+Stimvalmean2
+
+
+## Error Rate
+anova32ER <- ezANOVA(data = Exp1_phase3.2,
+                   dv = ER,
+                   wid = PROLIFIC_PID,
+                   within = .(Validity,StimulusType),
+                   detailed = TRUE) 
+anova_out(anova32ER)
+
+inter3.2er <- ggplot(Exp1_phase3.2, aes(x=Validity, y=ER,color = StimulusType))+
+    geom_line(aes(group = StimulusType, color = StimulusType),size = 1,stat = "summary", fun = "mean")+
+  geom_point(aes(group = StimulusType),size = 1,stat = "summary", fun = "mean",show.legend = FALSE)+
+  scale_color_manual(values = c("deepskyblue4","cadetblue3"))+coord_cartesian(ylim = c(0,0.15))+
+  theme_classic()+ylab("Error Rate")+ggtitle("Mean of valid and invalid trials in Phase 3.2")+theme(text = element_text(size = 20))
+inter3.2er
+
+barplotmean2ER <- summarySEwithin(Exp1_phase3.2, measurevar="ER", withinvars=c("Validity","StimulusType"),
+                                 idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
+Stimvalmean2ER <- ggplot(barplotmean2ER, aes(x=StimulusType, y=ER,fill = Validity))+
+  geom_bar(stat = "identity",position = position_dodge())+
+  geom_errorbar(aes(ymin = ER - ci, ymax = ER + ci),width = .1, size = 1,position = position_dodge(.9))+
+    # geom_line(aes(group = Saliency, linetype = Saliency),size = 1,stat = "summary", fun = "mean",)+
+    # geom_point(stat = "summary", fun = "mean", aes(shape = Saliency))+
+  scale_fill_manual(values = c("dodgerblue4","cadetblue3"))+coord_cartesian(ylim = c(0,0.15))+ggtitle("Valid and Invalid trials mean \n per Stimulus Type in Phase 3.2")+
+  theme_classic()+ylab("ErrorRate")+xlab("StimulusType")+theme(text = element_text(size = 20))
+Stimvalmean2ER
+
+
+
+```
+
+#### Differences within stimulus type
+
+The paired t tests results for each stimulus type will reveal the strength of the contingency effect
+
+1. For S1, there is no significant difference in RT as well as ER
+
+2. For S2, both RT and ER show significant differences
+
+```{r}
+## for S1
+
+pander(t.test(data = Exp1_phase3.2, RT_io~Validity,subset = (StimulusType == "S1-R Transfer"), paired = TRUE), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials for S1 in Phase 3.2-excluding outliers")
+pander(t.test(data = Exp1_phase3.2, ER~Validity,subset = (StimulusType == "S1-R Transfer"), paired = TRUE), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials for S1 in Phase 3.2-excluding outliers")
+
+## For S2
+pander(t.test(data = Exp1_phase3.2, RT_io~Validity,subset = (StimulusType == "S2-R Transfer"), paired = TRUE), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials for S1 in Phase 3.2-excluding outliers")
+pander(t.test(data = Exp1_phase3.2, ER~Validity,subset = (StimulusType == "S2-R Transfer"), paired = TRUE), style = 'rmarkdown', caption = "t test showing differences between valid and invalid trials for S1 in Phase 3.2-excluding outliers")
+
+
+```
+
+> Considering the above aggregated data there does not seem to be transfer between S2 and S1 other than the trend shown in ER in Phase 3.1
+
+## Awareness
+
+```{r}
+Exp1Aware$AwareResponse <- tolower(Exp1Aware$AwareResponse)
+Exp1Aware$AwareResponse <- as.factor(Exp1Aware$AwareResponse)
+table(Exp1Aware$AwareResponse)
+Exp1Aware$AwareCorr <- ifelse(Exp1Aware$AwareResponse == Exp1Aware$AwareAnswer,"1","0")
+```
+
+

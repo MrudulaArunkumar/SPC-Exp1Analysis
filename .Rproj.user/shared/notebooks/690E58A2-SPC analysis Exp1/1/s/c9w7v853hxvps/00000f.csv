@@ -1,0 +1,18 @@
+"0","## for Error RAte
+pander((t.test(data = Exp1_phase2, ER~Validity,paired = TRUE)), style = 'rmarkdown', caption = ""t test showing differences between valid and invalid trials-excluding outliers"")
+"
+"1","
+
+| Test statistic | df |     P value      | Alternative hypothesis |
+|:--------------:|:--:|:----------------:|:----------------------:|
+|     4.509      | 70 | 2.554e-05  * * * |       two.sided        |
+
+Table: t test showing differences between valid and invalid trials-excluding outliers (continued below)
+
+ 
+
+| mean of the differences |
+|:-----------------------:|
+|         0.04173         |
+
+"

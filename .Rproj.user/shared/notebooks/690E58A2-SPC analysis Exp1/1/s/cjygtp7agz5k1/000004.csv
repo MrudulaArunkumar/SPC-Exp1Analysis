@@ -1,0 +1,11 @@
+"0","pander(round(table(Exp1data$ACC_trials)/nrow(Exp1data)*100, digits = 3), style = 'rmarkdown', caption = ""Percentage of errors"")
+"
+"1","
+
+|   0   |  1   |
+|:-----:|:----:|
+| 5.301 | 94.7 |
+
+Table: Percentage of errors
+
+"

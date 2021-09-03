@@ -1,0 +1,17 @@
+"0","pander(t.test(data = Exp1_phase3.2, ER~Validity,subset = (StimulusType == ""S2-R Transfer""), paired = TRUE), style = 'rmarkdown', caption = ""t test showing differences between valid and invalid trials for S1 in Phase 3.2-excluding outliers"")
+"
+"1","
+
+| Test statistic | df |  P value  | Alternative hypothesis |
+|:--------------:|:--:|:---------:|:----------------------:|
+|     2.431      | 71 | 0.0176  * |       two.sided        |
+
+Table: t test showing differences between valid and invalid trials for S1 in Phase 3.2-excluding outliers (continued below)
+
+ 
+
+| mean of the differences |
+|:-----------------------:|
+|         0.02037         |
+
+"
