@@ -1,7 +1,7 @@
 ---
 title: "SPC Exp1"
 author: "Mrudula"
-date: "r format(Sys.time(), '%d %B,%Y')`"
+date: "`r format(Sys.time(), '%d %B,%Y')`"
 output:
   html_document:
     theme: readable
@@ -18,7 +18,7 @@ output:
 
 **This contains the analysis script of the first experiment in the Sensory pre conditioning series**
 
-```{r}
+```{r loadlibs, warning=FALSE,message=FALSE}
 # loading libraries
 library(tidyverse)
 library(plyr)
@@ -53,7 +53,7 @@ Exp1data <- read.csv(here("Data", "Exp1_fulldataset.csv"))
 - Error Rate column is created
 
 
-```{r}
+```{r warning=FALSE, message=FALSE}
 # remove unnecessary columns
 Exp1data <- Exp1data %>%
   select(-X,-consentResp.keys,-consentResp.rt,-Proceed.keys,-Proceed.rt,-AttnChkResp.keys,-AttnChkResp.corr,-AttnChkResp.rt,-Attention.thisRepN,-Attention.thisTrialN,-Attention.ran,-Attention.thisIndex,-Attention.thisN,-proceed1.keys,-proceed1.rt,-proceed2.keys,-proceed2.rt,-InstRep.ran,-InstRep.thisIndex,-InstRep.thisN,-InstRep.thisRepN,-InstRep.thisTrialN,-NextPhaseResp.keys,-NextPhaseResp.rt,-AttentionTask2.ran,-AttentionTask2.thisRepN,-AttentionTask2.thisIndex,-AttentionTask2.thisN,-AttentionTask2.thisTrialN,-InstRep2.thisRepN,-InstRep2.thisTrialN,-InstRep2.thisN,-InstRep2.thisIndex,-InstRep2.ran,-PracRepeat.thisRepN,-PracRepeat.ran,-PracRepeat.thisTrialN,-PracRepeat.thisN,-PracRepeat.thisIndex)
@@ -450,7 +450,7 @@ pander(t.test(data = Exp1_phase3.2, ER~Validity,subset = (StimulusType == "S2-R 
 Exp1Aware$AwareResponse <- tolower(Exp1Aware$AwareResponse)
 Exp1Aware$AwareResponse <- as.factor(Exp1Aware$AwareResponse)
 table(Exp1Aware$AwareResponse)
-Exp1Aware$AwareCorr <- ifelse(Exp1Aware$AwareResponse == Exp1Aware$AwareAnswer,"1","0")
+
 ```
 
 
