@@ -3,7 +3,7 @@
     "path": "D:/PhD/Experiments/Sensory Pre conditioning/Exp1_SPC/Analysis/scripts/SPC analysis Exp1.Rmd",
     "project_path": "scripts/SPC analysis Exp1.Rmd",
     "type": "r_markdown",
-    "hash": "3240242608",
+    "hash": "3081615814",
     "contents": "",
     "dirty": false,
     "created": 1630422019623.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "12,17",
-        "scrollLine": "0",
+        "cursorPosition": "127,0",
+        "scrollLine": "99",
         "docOutlineVisible": "1"
     },
     "folds": "",
-    "lastKnownWriteTime": 1630684600,
+    "lastKnownWriteTime": 1631543479,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1630684600,
+    "last_content_update": 1631543479711,
     "read_only": false,
     "read_only_alternatives": []
 }
