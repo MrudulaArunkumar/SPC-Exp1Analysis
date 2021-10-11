@@ -33,6 +33,7 @@ library(Rmisc)
 library(lme4)
 library(nlme)
 library(lmerTest)
+library(sjPlot)
 library(car)
 library(ggdist)
 
@@ -193,6 +194,7 @@ First checking whether participants picked up on the association between **S1-S2
 The word pairs were:
 
 > High(S1) + fair(S2)
+
 > even(S1) + warm(S2)
 
 T.test result shows that there is a significant difference between valid and invalid trials $t = 6.156, p < .001$. The mean difference is *~32.7 ms*
@@ -565,21 +567,16 @@ The questions were as follows:
 12. Which colour almost always occurred with "even"? Type the response key you pressed for that particular colour
 
 
-The Awareness analysis resulted in two more conditions depending on the performance on particular questions. The variables were called as:
-
-1. Awareness : where participants who responded either one of the y/n questions accurately
+The Awareness analysis resulted in three conditions/factors depending on the performance on particular questions. The variables were called as:
   
-    * S-S aware: for questions related to Phase 1 (Q1, Q3)
-    * S2-R aware: for questions related to Phase 2 (Q5, Q7)
-    * S1-R aware: for questions related to Phase 3 (Q9, Q11)
+    * S-S aware: for questions related to Phase 1 (Q1, Q3, Q2, Q4)
+    * S2-R aware: for questions related to Phase 2 (Q5, Q7, Q6, Q8)
+    * S1-R aware: for questions related to Phase 3 (Q9, Q11, Q10, Q12)
+    
+These involve both the y/n questions as well as the typed answers for the stimuli
   
-2. Awareness_detailed: where participants who responded either to one of textbox typed answers accurately.
+These values were then merged to the aggregate files from Phase 3.1 and Phase 3.2 to check for transfer effects and were split intp three aggregate files depending on the type of awareness
 
-    * S-S aware: for questions related to Phase 1 (Q2, Q4)
-    * S2-R aware: for questions related to Phase 2 (Q6, Q8)
-    * S1-R aware: for questions related to Phase 3 (Q10, Q12)
-
-These values were then merged to the aggregate files from Phase 3.1 and Phase 3.2 to check for transfer effects
 
 ```{r}
 Exp1Aware <- read_csv(here("Data","Exp1AwarenessRecoded.csv"))
@@ -595,35 +592,37 @@ Exp1Aware <- Exp1Aware %>%
                                   ifelse((Awareness.thisIndex == 8 | Awareness.thisIndex == 10),"S1-R",
                                   ifelse((Awareness.thisIndex == 9 | Awareness.thisIndex == 11),"S1-R_typed",NA)))))))
 
-Exp1Aware %>% 
-  group_by(QuesType,AwareAccuracy) %>%                drop_na(AwareAccuracy) %>% 
-  tally() %>% 
-  kable()
 
 Exp1Aware <- Exp1Aware %>% 
   mutate(AwareType = ifelse((QuesType == "S-S Association"| QuesType == "S-S Association_typed"),"S-S Awareness",
                            ifelse((QuesType == "S2-R"| QuesType == "S2-R_typed"),"S2-R Awareness",
                                   ifelse((QuesType == "S1-R"| QuesType == "S1-R_typed"),"S1-R Awareness",NA))))
 
-
+#creating a summary file that has the aggregate Total Acc
 AwareSummary <-Exp1Aware %>% 
   group_by(PROLIFIC_PID,AwareType) %>% 
   summarise(TotalAcc = sum(AwareAccuracy, na.rm = TRUE))
 
+#shows the table of number of participants with what score of TotalAcc per condition
 AwareSummary %>% 
   group_by(AwareType,TotalAcc) %>% distinct() %>% 
   tally() %>% 
   kable(caption = "Summary of Accuracy Scores based on type of Awareness")
 
 
-
+#using the cutoff score of 2 to decide who is aware and unaware
 AwareSummary <- AwareSummary %>% 
   mutate(AwarenessLevel = ifelse(TotalAcc >=2, "Aware","Unaware"))
 
-
+ppall3<-AwareSummary %>% 
+  subset(AwarenessLevel=="Aware") %>% count(PROLIFIC_PID)
+ppall3 <- ppall3 %>% filter(n == 3)
+ppall3 <- ppall3$PROLIFIC_PID
 
 Exp1_phase3.1_A <- merge(Exp1_phase3.1,AwareSummary, by = "PROLIFIC_PID")
 Exp1_phase3.2_A <- merge(Exp1_phase3.2,AwareSummary, by = "PROLIFIC_PID")
+Exp1_phase3.1_3A <- Exp1_phase3.1 %>% filter(PROLIFIC_PID %in% ppall3)
+Exp1_phase3.2_3A <- Exp1_phase3.2 %>% filter(PROLIFIC_PID %in% ppall3)
 
 ##splitting by awareness for 3.1
 Exp1_phase3.1_SS <- Exp1_phase3.1_A %>%
@@ -823,6 +822,24 @@ ER3A <- (S2_31_er + SS_31_er + S1_31_er)+
 ER3A 
 ```
 
+Only checking for partcipants who had awareness in all categories
+
+```{r}
+anova_3.1_3A <- ezANOVA(data = Exp1_phase3.1_3A,
+                   dv = RT,
+                   wid = PROLIFIC_PID,
+                   within = .(Validity,StimulusType),
+                   detailed = TRUE)
+anova_out(anova_3.1_3A)
+
+ggplot(data = Exp1_phase3.1_3A, aes(x = StimulusType, y = RT, fill = Validity))+
+  geom_bar(stat = "summary", fun = "mean", position = position_dodge())+
+  scale_fill_manual(values = c("midnightblue","skyblue"))+
+  coord_cartesian(ylim = c(400,600))+
+  labs(title = "Transfer in Phase 3.1 for participants with all types of awareness",
+       xlab = "Stimulus Type",
+       ylab = "Reaction Time")+theme_classic()
+```
 
 ## Phase 3.2
 
@@ -996,6 +1013,25 @@ ER3A_2 <- (S2_32_er + SS_32_er + S1_32_er)+
   plot_layout(guides = "collect")&theme_classic()
 ER3A_2 
 ```
+
+
+```{r}
+anova_3.2_3A <- ezANOVA(data = Exp1_phase3.2_3A,
+                   dv = RT,
+                   wid = PROLIFIC_PID,
+                   within = .(Validity,StimulusType),
+                   detailed = TRUE)
+anova_out(anova_3.2_3A)
+
+ggplot(data = Exp1_phase3.2_3A, aes(x = StimulusType, y = RT, fill = Validity))+
+  geom_bar(stat = "summary", fun = "mean", position = position_dodge())+
+  scale_fill_manual(values = c("midnightblue","skyblue"))+
+  coord_cartesian(ylim = c(400,600))+
+  labs(title = "Transfer in Phase 3.2 for participants with all types of awareness",
+       xlab = "Stimulus Type",
+       ylab = "Reaction Time")+theme_classic()
+```
+
 # Exploratory
 
 ```{r message=FALSE, warning=FALSE}
@@ -1009,20 +1045,21 @@ Exp1_3.1_block <- Exp1data %>%
   rename(StimulusType = Condition)
 
 #participants with NaN
-
 ppNaN <- which(is.nan(Exp1_3.1_block$RT)==TRUE,useNames =TRUE)
 
 ppNaN <- Exp1_3.1_block$PROLIFIC_PID[ppNaN]
 
-#remmoving people who have NaN
+#removing people who have NaN
 Exp1_3.1_block <- Exp1_3.1_block %>% 
   filter(!PROLIFIC_PID %in% ppNaN)
 
 ##Change to lme4 and use linear mixed effects for ANOVA
 
 ## Reaction Time
-anova31RT_b <- lmer(data = Exp1_3.1_block, RT~Validity*StimulusType*BlockNumber+ (1|PROLIFIC_PID))
-pander(anova(anova31RT_b), style = "rmarkdown", capion = "ANOVA(RT) results including BlockNumber")
+anova31RT_b <- lmer(data = Exp1_3.1_block, RT~1+Validity*StimulusType*BlockNumber+ (1|PROLIFIC_PID))
+tab_model(anova31RT_b)
+
+pander(summary(anova31RT_b), style = "rmarkdown", capion = "ANOVA(RT) results including BlockNumber")
 
 mean3_1_b <- summarySEwithin(Exp1_3.1_block, measurevar= "RT", withinvars=c("Validity","StimulusType","BlockNumber"), idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
 
@@ -1038,8 +1075,8 @@ inter3.1b <- ggplot(mean3_1_b, aes(x=StimulusType, y=RT,fill = Validity))+
 
 
 ## Error Rate
-anova31ER_b <- lmer(data = Exp1_3.1_block, ER~Validity*StimulusType*BlockNumber+ (1|PROLIFIC_PID))
-
+anova31ER_b <- lmer(data = Exp1_3.1_block, ER~1+Validity*StimulusType*BlockNumber+ (1|PROLIFIC_PID))
+tab_model(anova31ER_b)
 pander(anova(anova31ER_b), style = "rmarkdown", capion = "ANOVA(ER) results including BlockNumber")
 
 mean3_1_ber <- summarySEwithin(Exp1_3.1_block, measurevar= "ER", withinvars=c("Validity","StimulusType","BlockNumber"), idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
