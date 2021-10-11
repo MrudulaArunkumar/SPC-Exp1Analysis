@@ -21,6 +21,7 @@ output:
 ```{r loadlibs, warning=FALSE,message=FALSE}
 # loading libraries
 library(tidyverse)
+library(here)
 library(plyr)
 library(ez)
 library(schoRsch)
@@ -28,7 +29,7 @@ library(knitr)
 library(pander)
 library(rmarkdown)
 library(reshape2)
-library(here)
+
 library(ggpubr)
 library(Rmisc)
 library(lme4)
@@ -41,8 +42,8 @@ library(ggdist)
 
 #import data
 Exp1data <- read.csv(here("Data", "Exp1_fulldataset.csv"))
-
-
+glimpse(Exp1data)
+Exp1data %>% count(PROLIFIC_PID)
 ```
 
 ## DATA PREPARATION ##
@@ -55,69 +56,87 @@ Exp1data <- read.csv(here("Data", "Exp1_fulldataset.csv"))
 
 ```{r warning=FALSE, message=FALSE}
 # remove unnecessary columns
-Exp1data <- Exp1data %>%
-  select(-X,-consentResp.keys,-consentResp.rt,-Proceed.keys,-Proceed.rt,-AttnChkResp.keys,-AttnChkResp.corr,-AttnChkResp.rt,-Attention.thisRepN,-Attention.thisTrialN,-Attention.ran,-Attention.thisIndex,-Attention.thisN,-proceed1.keys,-proceed1.rt,-proceed2.keys,-proceed2.rt,-InstRep.ran,-InstRep.thisIndex,-InstRep.thisN,-InstRep.thisRepN,-InstRep.thisTrialN,-NextPhaseResp.keys,-NextPhaseResp.rt,-AttentionTask2.ran,-AttentionTask2.thisRepN,-AttentionTask2.thisIndex,-AttentionTask2.thisN,-AttentionTask2.thisTrialN,-InstRep2.thisRepN,-InstRep2.thisTrialN,-InstRep2.thisN,-InstRep2.thisIndex,-InstRep2.ran,-PracRepeat.thisRepN,-PracRepeat.ran,-PracRepeat.thisTrialN,-PracRepeat.thisN,-PracRepeat.thisIndex)
-#prepare RT
-Exp1data <- separate(Exp1data, col = Response.rt, into = c("RT3_Trials", "RT3_secondary"), sep = ',')
-Exp1data$RT3_Trials <- Exp1data$RT3_Trials%>%
-  str_replace_all("\\[|\\]","")%>%
-  as.double(Exp1data$RT3_Trials)
-Exp1data$RT3_Trials <- 1000*(Exp1data$RT3_Trials)
+Exp1data %>% select(-X,
+                    -starts_with("Attn"),
+                    -starts_with("Consent"),
+                    -starts_with("Proceed"),
+                    -starts_with("Prac"),
+                    -starts_with("Attention."),
+                    -starts_with("Inst"),
+                    -starts_with("NextPhase"),
+                    -starts_with("AttentionTask2")) -> Exp1data
+glimpse(Exp1data)
+#prepare RT from Phase 2 and 3
+Exp1data %>% separate(Response.rt, into = c("RT23_main","RT23_secondary"), sep = ',') -> Exp1data
 
-#prepare RT from Phase 2
-Exp1data <- separate(Exp1data, col = SSResp.rt, into = c("RT2_Trials", "RT2_secondary"), sep = ',')
-Exp1data$RT2_Trials <- Exp1data$RT2_Trials%>%
+Exp1data$RT23_main <- Exp1data$RT23_main%>%
   str_replace_all("\\[|\\]","")%>%
-  as.double(Exp1data$RT2_Trials)
-Exp1data$RT2_Trials <- 1000*(Exp1data$RT2_Trials)
+  as.double(Exp1data$RT23_main)
+Exp1data$RT23_main <-  1000*(Exp1data$RT23_main)
+
+#prepare RT from Phase 1
+Exp1data %>% separate(SSResp.rt, into = c("RT1_main","RT1_Secondary"), sep = ',') -> Exp1data
+
+Exp1data$RT1_main <- Exp1data$RT1_main %>%
+  str_replace_all("\\[|\\]","") %>%
+  as.double(Exp1data$RT1_main)
+Exp1data$RT1_main <- 1000*(Exp1data$RT1_main)
 
 #creating a dummy variable to pick wherever the RTs are from Phase 1 and which are from Phase 2 & 3
 Exp1data$RTdummy <- NA
-Exp1data$RTdummy <- ifelse(is.na(Exp1data$RT2_Trials) == FALSE,1,NA)
-Exp1data$RTdummy <- ifelse(is.na(Exp1data$RT3_Trials)==FALSE,2,Exp1data$RTdummy)
+Exp1data <- Exp1data %>% mutate(RTdummy = ifelse(is.na(RT1_main)==FALSE, 1,
+                                     ifelse(is.na(RT23_main)==FALSE,2,RTdummy)))
 
+Exp1data %>% count(RTdummy)
 #combining all important RTs 
 Exp1data <- Exp1data %>%
-  mutate(RT_Trials = ifelse((RTdummy == 1), RT2_Trials,ifelse((RTdummy == 2),RT3_Trials,NA)))
+  mutate(RT_Trials = ifelse((RTdummy == 1),RT1_main,
+                            ifelse((RTdummy == 2),RT23_main,NA))) %>% relocate(RT_Trials)
 
 ## same for accuracy
-Exp1data$ACCdummy <- ifelse(is.na(Exp1data$SSResp.corr)==FALSE,1,NA)
-Exp1data$ACCdummy <- ifelse(is.na(Exp1data$Response.corr)==FALSE,2,Exp1data$ACCdummy)
+Exp1data$ACCdummy <- NA
+Exp1data <- Exp1data %>% 
+  mutate(ACCdummy = ifelse(is.na(SSResp.corr)==FALSE,1,
+                           ifelse(is.na(Response.corr)==FALSE,2,ACCdummy)))
 
 Exp1data <- Exp1data %>%
   mutate(ACC_trials = ifelse((ACCdummy == 1),SSResp.corr,ifelse((ACCdummy == 2),Response.corr,NA)))
 
 Exp1data$ER <- 1-Exp1data$ACC_trials
 
-Exp1data$Condition[(Exp1data$Phase == 3.1 & is.na(Exp1data$Stim2)==TRUE)] <- "S1-R Transfer"
+Exp1data <- Exp1data %>% 
+  mutate(Condition = replace(Condition, (Phase == 3.1 & is.na(Stim2)==TRUE),"S1-R Transfer")) 
 
+Exp1data %>% count(Condition,Phase)
 
+Exp1data <-  Exp1data %>% relocate(Phase,Condition,ACC_trials,ER)
 
-Exp1Aware <- Exp1data %>%
- filter(str_detect(AwareQuestion, "Type"))
-
-Exp1ER <- aggregate(data = Exp1data, ER~PROLIFIC_PID, mean)
-Exp1ER$Perf <- na.omit(Exp1data$Performance)
-table(Exp1data$Performance)
-
-Exp1data <- Exp1data%>%drop_na(RT_Trials)
-Exp1RT <- aggregate(data = Exp1data, RT_Trials~PROLIFIC_PID, mean)
-Exp1overallagg <- merge(Exp1ER,Exp1RT, by = "PROLIFIC_PID")
+Exp1data %>%
+  group_by(PROLIFIC_PID) %>% 
+  summarise(Errors = mean(ER, na.rm = TRUE),
+            ReactionTime = mean(RT_Trials, na.rm = TRUE)) %>% arrange(desc(ReactionTime)) -> Exp1overallagg
 
 Exp1data <- Exp1data %>%
-  filter(PROLIFIC_PID != "612f8847fa13bca455f7bca1") # very slow RT
-Exp1data <- Exp1data %>%
+  filter(PROLIFIC_PID != "612f8847fa13bca455f7bca1") %>%   # very slow RT
   filter(PROLIFIC_PID != "6102fbc5a76f1755012ed31f") #chose to return
 
-Exp1Aware <- Exp1Aware %>%
-  filter(PROLIFIC_PID != "612f8847fa13bca455f7bca1") # very slow RT
-Exp1Aware <- Exp1Aware %>%
-  filter(PROLIFIC_PID != "6102fbc5a76f1755012ed31f") #chose to return
+
+Exp1Aware <- Exp1data %>% select(contains("Aware"),
+                                 contains("PROLIFIC_PID"),
+                                 Answer.text) %>% distinct() %>% relocate(PROLIFIC_PID,Answer.text) %>% drop_na(AwareQuestion)
+
+
+write_csv(file = here("Data","Exp1Awareness.csv"),Exp1Aware)
+write_csv(file = here("Data","Exp1data_tidy.csv"),Exp1data)
+
+
 ```
 
 ## DESCRIPTIVES
 
 ```{r}
+Exp1data <- Exp1data%>%drop_na(RT_Trials)
+\
 pander(summary(Exp1data$Age),style = 'rmarkdown', caption = "Age")
 
 pander(summary(Exp1data$RT_Trials), style = 'rmarkdown',caption = 'Mean RT')
