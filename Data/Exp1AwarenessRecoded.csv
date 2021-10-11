@@ -1,0 +1,853 @@
+PROLIFIC_PID,Answer.text,AwareResponse,recoded,awarenext.keys,awarenext.rt,Awareness.thisRepN,Awareness.thisTrialN,Awareness.thisN,Awareness.thisIndex,Awareness.ran,AwareQuestion,AwareAnswer
+6110be101c5d8d4d444ca863,n,n,n,space,11.723,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6110be101c5d8d4d444ca863,n,n,k,space,8.4992,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+6110be101c5d8d4d444ca863,n,n,n,space,5.583,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6110be101c5d8d4d444ca863,n,n,k,space,1.3151,0,3,3,3,1,What do you think the word was? Type your answer,warm
+6110be101c5d8d4d444ca863,n,n,n,space,20.9097,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+6110be101c5d8d4d444ca863,green,green,u,space,9.7597,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+6110be101c5d8d4d444ca863,n,n,n,space,4.4494,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6110be101c5d8d4d444ca863,red,red,e,space,2.348,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+6110be101c5d8d4d444ca863,n,n,n,space,2.4825,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6110be101c5d8d4d444ca863,red,red,e,space,5.406,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+6110be101c5d8d4d444ca863,n,n,n,space,1.3744,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6110be101c5d8d4d444ca863,green,green,u,space,1.7707,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612d9dd386a8449802fba920,y,y,y,space,13.187,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612d9dd386a8449802fba920,warm,warm,warm,space,4.964,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612d9dd386a8449802fba920,y,y,y,space,2.695,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612d9dd386a8449802fba920,fair,fair,fair,space,2.615,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612d9dd386a8449802fba920,y,y,y,space,6.897,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612d9dd386a8449802fba920,e,e,e,space,6.684,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612d9dd386a8449802fba920,y,y,y,space,1.97,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612d9dd386a8449802fba920,u,u,u,space,1.245,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612d9dd386a8449802fba920,n,n,n,space,12.783,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612d9dd386a8449802fba920,e,e,e,space,8.164,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612d9dd386a8449802fba920,k,k,k,space,10.642,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612d9dd386a8449802fba920,e,e,e,space,2.046,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+611a92dc820df144d5780125,n,n,n,space,15.6551,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+611a92dc820df144d5780125,fair,fair,fair,space,10.8997,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+611a92dc820df144d5780125,y,y,y,space,6.8804,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+611a92dc820df144d5780125,fair,fair,fair,space,5.1396,0,3,3,3,1,What do you think the word was? Type your answer,warm
+611a92dc820df144d5780125,y,y,y,space,7.5492,0,4,4,4,1,"Do you think """"warm"""" mostly appeared in a particular colour?. If yes then type ""y"" and ""n"""" for no and if you don't know type ""k"".",y
+611a92dc820df144d5780125,red,red,e,space,3.72,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+611a92dc820df144d5780125,y,y,y,space,3.3103,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611a92dc820df144d5780125,green,green,u,space,2.2118,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+611a92dc820df144d5780125,y,y,y,space,4.859,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611a92dc820df144d5780125,green,green,u,space,4.3493,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+611a92dc820df144d5780125,y,y,y,space,3.0791,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611a92dc820df144d5780125,red,red,e,space,1.3021,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5c2c1e7810677f0001dcb7f8,k,k,k,space,19.695,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5c2c1e7810677f0001dcb7f8,warm,warm,warm,space,16.743,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5c2c1e7810677f0001dcb7f8,y,y,y,space,20.046,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5c2c1e7810677f0001dcb7f8,fair,fair,fair,space,3.867,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5c2c1e7810677f0001dcb7f8,k,k,k,space,15.317,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5c2c1e7810677f0001dcb7f8,red,red,e,space,5.997,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5c2c1e7810677f0001dcb7f8,k,k,k,space,11.829,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5c2c1e7810677f0001dcb7f8,green,green,u,space,6.829,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5c2c1e7810677f0001dcb7f8,n,n,n,space,6.474,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5c2c1e7810677f0001dcb7f8,red,red,e,space,9.38,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5c2c1e7810677f0001dcb7f8,n,n,n,space,12.944,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5c2c1e7810677f0001dcb7f8,green,green,u,space,5.466,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+610726b29bdbcfbbaeaa5c74,n,n,n,space,11.065,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+610726b29bdbcfbbaeaa5c74,high,high,high,space,10.414,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+610726b29bdbcfbbaeaa5c74,n,n,n,space,11.956,0,2,2,2,1,"Do you think """"even"""" was always followed by a particular word? Type ""y"" for yes  and ""n"""" for no and and ""k"" in case you do not know.""",y 
+610726b29bdbcfbbaeaa5c74,even,even,even,space,2.623,0,3,3,3,1,What do you think the word was? Type your answer,warm
+610726b29bdbcfbbaeaa5c74,n,n,n,space,10.413,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+610726b29bdbcfbbaeaa5c74,warm,warm,k,space,1.738,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+610726b29bdbcfbbaeaa5c74,n,n,n,space,1.789,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+610726b29bdbcfbbaeaa5c74,fair,fair,k,space,2.256,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+610726b29bdbcfbbaeaa5c74,n,n,n,space,2.574,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+610726b29bdbcfbbaeaa5c74,high,high,k,space,1.985,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+610726b29bdbcfbbaeaa5c74,n,n,n,space,1.766,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+610726b29bdbcfbbaeaa5c74,even,even,k,space,1.489,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61118b8a86db70c1e312c259,y,y,y,space,17.4711,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61118b8a86db70c1e312c259,fair,fair,fair,space,5.7808,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61118b8a86db70c1e312c259,y,y,y,space,9.7702,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61118b8a86db70c1e312c259,warm,warm,warm,space,4.4586,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61118b8a86db70c1e312c259,y,y,y,space,8.858,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+61118b8a86db70c1e312c259,e,e,e,space,21.2425,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+61118b8a86db70c1e312c259,y,y,y,space,4.3539,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61118b8a86db70c1e312c259,u,u,u,space,3.3115,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61118b8a86db70c1e312c259,k,k,k,space,8.3885,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61118b8a86db70c1e312c259,u,u,u,space,13.1028,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+61118b8a86db70c1e312c259,k,k,k,space,5.6446,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61118b8a86db70c1e312c259,e,e,e,space,4.0276,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+60fc5b7b94aa5c4dffab9ac4,k,k,k,space,12.106,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60fc5b7b94aa5c4dffab9ac4,NA,NA,NA,space,4.0013,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60fc5b7b94aa5c4dffab9ac4,y,y,y,space,10.032,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60fc5b7b94aa5c4dffab9ac4,fair,fair,fair,space,3.348,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60fc5b7b94aa5c4dffab9ac4,k,k,k,space,4.2369,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60fc5b7b94aa5c4dffab9ac4,NA,NA,NA,space,0.3926,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60fc5b7b94aa5c4dffab9ac4,y,y,y,space,8.8432,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fc5b7b94aa5c4dffab9ac4,green,green,u,space,3.8588,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60fc5b7b94aa5c4dffab9ac4,y,y,y,space,3.6887,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fc5b7b94aa5c4dffab9ac4,red,red,e,space,2.4207,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+60fc5b7b94aa5c4dffab9ac4,k,k,k,space,4.2715,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fc5b7b94aa5c4dffab9ac4,NA,NA,NA,space,0.3931,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+60ff2c1cf8fdc888b5fe786d,y,y,y,space,12.13136,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60ff2c1cf8fdc888b5fe786d,fair,fair,fair,space,5.394420001,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60ff2c1cf8fdc888b5fe786d,n,n,n,space,8.148250001,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60ff2c1cf8fdc888b5fe786d,warm,warm,warm,space,6.34783,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60ff2c1cf8fdc888b5fe786d,y,y,y,space,4.22891,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60ff2c1cf8fdc888b5fe786d,red,red,e,space,4.030655,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60ff2c1cf8fdc888b5fe786d,n,n,n,space,3.578375001,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60ff2c1cf8fdc888b5fe786d,green,green,u,space,6.032579999,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60ff2c1cf8fdc888b5fe786d,y,y,y,space,4.24808,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60ff2c1cf8fdc888b5fe786d,red,red,e,space,2.48719,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+60ff2c1cf8fdc888b5fe786d,y,y,y,space,2.240300001,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60ff2c1cf8fdc888b5fe786d,green,green,u,space,1.752625,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61281debe85082cc937dd9ae,k,k,k,space,9.4087,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61281debe85082cc937dd9ae,fair,fair,fair,space,11.3465,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61281debe85082cc937dd9ae,k,k,k,space,4.1116,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61281debe85082cc937dd9ae,warm,warm,warm,space,3.6018,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61281debe85082cc937dd9ae,n,n,n,space,4.7377,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+61281debe85082cc937dd9ae,e,e,e,space,12.8424,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+61281debe85082cc937dd9ae,n,n,n,space,1.6907,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61281debe85082cc937dd9ae,u,u,u,space,1.3447,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61281debe85082cc937dd9ae,y,y,y,space,3.7795,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61281debe85082cc937dd9ae,e,e,e,space,3.6513,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+61281debe85082cc937dd9ae,y,y,y,space,1.4841,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61281debe85082cc937dd9ae,u,u,u,space,0.6667,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+611c014c59fd7dbcffe2b749,n,n,n,space,14.4,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+611c014c59fd7dbcffe2b749,NA,NA,NA,space,15.486,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+611c014c59fd7dbcffe2b749,n,n,n,space,9.3,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+611c014c59fd7dbcffe2b749,fair,fair,fair,space,11.19,0,3,3,3,1,What do you think the word was? Type your answer,warm
+611c014c59fd7dbcffe2b749,y,y,y,space,14.316,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes  then type ""y"" and  ""n"" for no and if you don't know type ""k"".",y
+611c014c59fd7dbcffe2b749,e,e,e,space,11.91,0,5,5,5,1,"Which colour almost always occurred with """"warm""""? Type the response key you pressed for that particular colour""",e
+611c014c59fd7dbcffe2b749,y,y,y,space,12.843,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611c014c59fd7dbcffe2b749,u,u,u,space,5.187,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+611c014c59fd7dbcffe2b749,n,n,n,space,8.104,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611c014c59fd7dbcffe2b749,e,e,e,space,8.072,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+611c014c59fd7dbcffe2b749,n,n,n,space,5.147,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611c014c59fd7dbcffe2b749,u,u,u,space,3.724,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612fe8ff6842ac7db96a5dea,yes,yes,y,space,13.5339,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612fe8ff6842ac7db96a5dea,fair,fair,fair,space,10.8182,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612fe8ff6842ac7db96a5dea,yes,yes,y,space,7.15,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612fe8ff6842ac7db96a5dea,high,high,high,space,25.4177,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612fe8ff6842ac7db96a5dea,yes,yes,y,space,14.0507,0,4,4,4,1,"Do you think """"warm"""" mostly appeared in a particular colour?. If yes then type ""y"" and ""n"""" for no and if you don't know type ""k"".",y
+612fe8ff6842ac7db96a5dea,red,red,e,space,2.4013,0,5,5,5,1,"Which colour almost always occurred with """"warm""""? Type the response key you pressed for that particular colour""",e
+612fe8ff6842ac7db96a5dea,yes,yes,y,space,1.8354,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612fe8ff6842ac7db96a5dea,green,green,u,space,1.5827,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612fe8ff6842ac7db96a5dea,k,k,k,space,3.9007,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612fe8ff6842ac7db96a5dea,red,red,e,space,10.9203,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612fe8ff6842ac7db96a5dea,k,k,k,space,2.9498,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612fe8ff6842ac7db96a5dea,green,green,u,space,2.0919,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612f903c57ddd80e100446aa,n,n,n,space,9.6359,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612f903c57ddd80e100446aa,NA,NA,NA,space,4.8096,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612f903c57ddd80e100446aa,y,y,y,space,3.6936,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612f903c57ddd80e100446aa,fair,fair,fair,space,1.8964,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612f903c57ddd80e100446aa,y,y,y,space,4.3101,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612f903c57ddd80e100446aa,red,red,e,space,1.6063,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612f903c57ddd80e100446aa,y,y,y,space,4.785,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f903c57ddd80e100446aa,green,green,u,space,2.8852,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612f903c57ddd80e100446aa,y,y,y,space,4.3142,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f903c57ddd80e100446aa,red,red,e,space,1.757,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612f903c57ddd80e100446aa,y,y,y,space,2.5796,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f903c57ddd80e100446aa,green,green,u,space,1.9789,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5e3bf1f6a9b840027af8c0fc,n,n,n,space,8.0395,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5e3bf1f6a9b840027af8c0fc,NA,NA,NA,space,6.2989,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5e3bf1f6a9b840027af8c0fc,n,n,n,space,3.9265,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5e3bf1f6a9b840027af8c0fc,NA,NA,NA,space,1.2911,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5e3bf1f6a9b840027af8c0fc,y,y,y,space,5.6471,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5e3bf1f6a9b840027af8c0fc,red,red,e,space,4.7582,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5e3bf1f6a9b840027af8c0fc,y,y,y,space,5.5976,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5e3bf1f6a9b840027af8c0fc,green,green,u,space,1.6517,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5e3bf1f6a9b840027af8c0fc,n,n,n,space,3.2086,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5e3bf1f6a9b840027af8c0fc,NA,NA,NA,space,2.5064,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5e3bf1f6a9b840027af8c0fc,n,n,n,space,9.2562,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5e3bf1f6a9b840027af8c0fc,NA,NA,NA,space,1.471,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+6128ee3a6a77a18f03fa0a77,even,even,y,space,11.3814,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6128ee3a6a77a18f03fa0a77,even,even,even,space,12.1098,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+6128ee3a6a77a18f03fa0a77,y,y,y,space,17.1124,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6128ee3a6a77a18f03fa0a77,high,high,high,space,2.9558,0,3,3,3,1,What do you think the word was? Type your answer,warm
+6128ee3a6a77a18f03fa0a77,y,y,y,space,5.5143,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes  then type ""y"" and  ""n"" for no and if you don't know type ""k"".",y
+6128ee3a6a77a18f03fa0a77,red,red,e,space,3.4129,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+6128ee3a6a77a18f03fa0a77,y,y,y,space,3.2759,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6128ee3a6a77a18f03fa0a77,green,green,u,space,1.8225,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+6128ee3a6a77a18f03fa0a77,y,y,y,space,2.5695,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6128ee3a6a77a18f03fa0a77,green,green,u,space,2.4229,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+6128ee3a6a77a18f03fa0a77,y,y,y,space,3.0479,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6128ee3a6a77a18f03fa0a77,green,green,u,space,7.908,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612fa680afcbea6ac3726c0a,y,y,y,space,11.2179,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612fa680afcbea6ac3726c0a,fair,fair,fair,space,3.4619,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612fa680afcbea6ac3726c0a,y,y,y,space,3.0632,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612fa680afcbea6ac3726c0a,warm,warm,warm,space,2.461,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612fa680afcbea6ac3726c0a,n,n,n,space,7.8482,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612fa680afcbea6ac3726c0a,red,red,e,space,7.0549,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612fa680afcbea6ac3726c0a,n,n,n,space,4.1424,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612fa680afcbea6ac3726c0a,green,green,u,space,8.2349,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612fa680afcbea6ac3726c0a,y,y,y,space,6.2585,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612fa680afcbea6ac3726c0a,red,red,e,space,1.4151,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612fa680afcbea6ac3726c0a,n,n,n,space,3.5281,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612fa680afcbea6ac3726c0a,green,green,u,space,11.379,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+610018f081e1798b01f7b11b,y,y,y,space,13.7309,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+610018f081e1798b01f7b11b,even,even,even,space,3.483,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+610018f081e1798b01f7b11b,y,y,y,space,7.7822,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+610018f081e1798b01f7b11b,better,better,k,space,3.1667,0,3,3,3,1,What do you think the word was? Type your answer,warm
+610018f081e1798b01f7b11b,y,y,y,space,10.1653,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+610018f081e1798b01f7b11b,high,high,k,space,1.54,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+610018f081e1798b01f7b11b,y,y,y,space,8.9481,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+610018f081e1798b01f7b11b,even,even,k,space,1.0665,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+610018f081e1798b01f7b11b,y,y,y,space,15.9937,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+610018f081e1798b01f7b11b,green,green,u,space,2.1703,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+610018f081e1798b01f7b11b,y,y,y,space,7.066,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+610018f081e1798b01f7b11b,green,green,u,space,2.8532,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5fea1af5509c7e1cb361e9e1,n,n,n,space,8.5024,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5fea1af5509c7e1cb361e9e1,don't,don't,k,space,8.7784,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5fea1af5509c7e1cb361e9e1,k,k,k,space,10.5838,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5fea1af5509c7e1cb361e9e1,k,k,k,space,2.8632,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5fea1af5509c7e1cb361e9e1,k,k,k,space,4.0278,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5fea1af5509c7e1cb361e9e1,k,k,k,space,1.4796,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5fea1af5509c7e1cb361e9e1,k,k,k,space,2.6791,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5fea1af5509c7e1cb361e9e1,k,k,k,space,1.0304,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5fea1af5509c7e1cb361e9e1,k,k,k,space,4.0203,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5fea1af5509c7e1cb361e9e1,k,k,k,space,1.2627,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5fea1af5509c7e1cb361e9e1,k,k,k,space,2.8117,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5fea1af5509c7e1cb361e9e1,k,k,k,space,9.5635,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61033eba81c29e606045a4bd,n,n,n,space,11.9101,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61033eba81c29e606045a4bd,fair,fair,fair,space,12.8824,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61033eba81c29e606045a4bd,k,k,k,space,11.4634,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61033eba81c29e606045a4bd,warm,warm,warm,space,4.9399,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61033eba81c29e606045a4bd,n,n,n,space,8.0974,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+61033eba81c29e606045a4bd,u,u,u,space,6.1047,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+61033eba81c29e606045a4bd,y,y,y,space,11.6574,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61033eba81c29e606045a4bd,u,u,u,space,2.3589,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61033eba81c29e606045a4bd,y,y,y,space,5.1016,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61033eba81c29e606045a4bd,e,e,e,space,0.8206,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+61033eba81c29e606045a4bd,n,n,n,space,6.7537,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61033eba81c29e606045a4bd,u,u,u,space,5.48,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+6110d232e85937a7ca3ac6e2,n,n,n,space,13.821,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6110d232e85937a7ca3ac6e2,NA,NA,NA,space,3.5032,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+6110d232e85937a7ca3ac6e2,n,n,n,space,3.7988,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6110d232e85937a7ca3ac6e2,NA,NA,NA,space,1.617,0,3,3,3,1,What do you think the word was? Type your answer,warm
+6110d232e85937a7ca3ac6e2,y,y,y,space,7.0315,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+6110d232e85937a7ca3ac6e2,red,red,e,space,5.6998,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+6110d232e85937a7ca3ac6e2,yes,yes,y,space,5.1329,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6110d232e85937a7ca3ac6e2,green,green,u,space,4.2651,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+6110d232e85937a7ca3ac6e2,n,n,n,space,4.8671,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6110d232e85937a7ca3ac6e2,NA,NA,NA,space,1.6009,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+6110d232e85937a7ca3ac6e2,n,n,n,space,2.1062,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6110d232e85937a7ca3ac6e2,NA,NA,NA,space,0.9835,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612f6dca3e6093ed70efca96,n,n,n,space,18.5574,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612f6dca3e6093ed70efca96,it,it,k,space,7.9491,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612f6dca3e6093ed70efca96,k,k,k,space,18.4072,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes and ""n"" for no  and ""k"" in case you do not know.",y
+612f6dca3e6093ed70efca96,warm,warm,warm,space,4.4234,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612f6dca3e6093ed70efca96,y,y,y,space,6.6823,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612f6dca3e6093ed70efca96,red,red,e,space,2.3741,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612f6dca3e6093ed70efca96,y,y,y,space,5.9391,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f6dca3e6093ed70efca96,green,green,u,space,8.3175,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612f6dca3e6093ed70efca96,k,k,k,space,5.2592,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f6dca3e6093ed70efca96,green,green,u,space,6.4831,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612f6dca3e6093ed70efca96,y,y,y,space,3.4596,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f6dca3e6093ed70efca96,red,red,e,space,1.6497,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612f4efe7a2e36e60e3254a7,n,n,n,space,15.6223,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612f4efe7a2e36e60e3254a7,NA,NA,NA,space,13.4944,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612f4efe7a2e36e60e3254a7,k,k,k,space,7.8789,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612f4efe7a2e36e60e3254a7,NA,NA,NA,space,1.6553,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612f4efe7a2e36e60e3254a7,k,k,k,space,1.6969,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612f4efe7a2e36e60e3254a7,green,green,u,space,8.4686,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612f4efe7a2e36e60e3254a7,k,k,k,space,4.2544,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f4efe7a2e36e60e3254a7,NA,NA,NA,space,2.2499,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612f4efe7a2e36e60e3254a7,k,k,k,space,3.1921,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f4efe7a2e36e60e3254a7,NA,NA,NA,space,1.684,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612f4efe7a2e36e60e3254a7,k,k,k,space,2.4726,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f4efe7a2e36e60e3254a7,NA,NA,NA,space,2.0275,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612d1782db5b273e408689b9,k,k,k,space,8.9891,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612d1782db5b273e408689b9,even,even,even,space,10.6216,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612d1782db5b273e408689b9,k,k,k,space,9.8957,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes and  ""n"" for no and ""k"" in case you do not know.",y
+612d1782db5b273e408689b9,high,high,high,space,4.0079,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612d1782db5b273e408689b9,red,red,y,space,4.7171,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612d1782db5b273e408689b9,e,e,e,space,11.7451,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612d1782db5b273e408689b9,n,n,n,space,7.1514,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612d1782db5b273e408689b9,green,green,u,space,4.5794,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612d1782db5b273e408689b9,k,k,k,space,8.9787,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612d1782db5b273e408689b9,r,r,e,space,4.6177,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612d1782db5b273e408689b9,k,k,k,space,7.4455,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes then type ""y""  if no then type ""n"" and if you don't know type ""k"".",y
+612d1782db5b273e408689b9,u,u,u,space,6.4459,0,11,11,11,1,"Which colour almost always occurred with """"even""""? Type the response key you pressed for that particular colour""",e
+612f7439f7672b1d977bce8f,y,y,y,space,13.736,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes  ""n"" for no  and ""k"" in case you do not know.",y
+612f7439f7672b1d977bce8f,warm,warm,warm,space,5.391,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612f7439f7672b1d977bce8f,y,y,y,space,8.872,0,2,2,2,1,,y
+612f7439f7672b1d977bce8f,fair,fair,fair,space,1.798,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612f7439f7672b1d977bce8f,y,y,y,space,10.874,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612f7439f7672b1d977bce8f,red,red,e,space,1.21,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612f7439f7672b1d977bce8f,y,y,y,space,2.724,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f7439f7672b1d977bce8f,green,green,u,space,1.349,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612f7439f7672b1d977bce8f,k,k,k,space,4.372,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f7439f7672b1d977bce8f,red,red,e,space,4.946,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612f7439f7672b1d977bce8f,y,y,y,space,4.678,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f7439f7672b1d977bce8f,green,green,u,space,1.949,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+6102f8ec8848b6fd63bcb9f8,k,k,k,space,14.3849,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes  ""n"" for no  and ""k"" in case you do not know.",y
+6102f8ec8848b6fd63bcb9f8,warm,warm,warm,space,17.1812,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+6102f8ec8848b6fd63bcb9f8,n,n,n,space,17.04,0,2,2,2,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6102f8ec8848b6fd63bcb9f8,fair,fair,fair,space,3.9298,0,3,3,3,1,What do you think the word was? Type your answer,warm
+6102f8ec8848b6fd63bcb9f8,y,y,y,space,5.5048,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+6102f8ec8848b6fd63bcb9f8,red,red,e,space,1.7899,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+6102f8ec8848b6fd63bcb9f8,y,y,y,space,3.5743,0,6,6,6,1,"Do you think """"fair"""" mostly appeared in a particular colour?. If yes  then type ""y""  if no then type ""n"" and if you don't know type """"k"".",y
+6102f8ec8848b6fd63bcb9f8,green,green,u,space,2.871,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+6102f8ec8848b6fd63bcb9f8,n,n,n,space,3.3115,0,8,8,8,1,"Do you think """"high"""" mostly appeared in a particular colour?. If yes  then type ""y""  if no then type ""n"" and if you don't know type ""k"".",y
+6102f8ec8848b6fd63bcb9f8,n,n,k,space,0.8933,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+6102f8ec8848b6fd63bcb9f8,k,k,k,space,7.4176,0,10,10,10,1,"Do you think """"even"""" mostly appeared in a particular colour?. If yes  then type ""y""  if no then type ""n"" and if you don't know type ""k"".",y
+6102f8ec8848b6fd63bcb9f8,k,k,k,space,0.6713,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61115d8771459d12d4e64c89,y,y,y,space,6.7989,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61115d8771459d12d4e64c89,fair,fair,fair,space,2.4407,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61115d8771459d12d4e64c89,y,y,y,space,2.172,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61115d8771459d12d4e64c89,warm,warm,warm,space,1.6617,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61115d8771459d12d4e64c89,y,y,y,space,3.33,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+61115d8771459d12d4e64c89,red,red,e,space,1.5071,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+61115d8771459d12d4e64c89,y,y,y,space,1.015,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61115d8771459d12d4e64c89,green,green,u,space,1.5316,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61115d8771459d12d4e64c89,n,n,n,space,7.6871,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61115d8771459d12d4e64c89,NA,NA,NA,space,2.7951,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+61115d8771459d12d4e64c89,n,n,n,space,2.0893,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61115d8771459d12d4e64c89,NA,NA,NA,space,0.6545,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61115e19812b0c9bd2ba8024,n,n,n,space,8.686,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61115e19812b0c9bd2ba8024,NA,NA,NA,space,6.1606,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61115e19812b0c9bd2ba8024,n,n,n,space,14.9019,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61115e19812b0c9bd2ba8024,NA,NA,NA,space,4.8328,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61115e19812b0c9bd2ba8024,y,y,y,space,9.656,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes  then type ""y""  ""n"" for no and if you don't know type ""k"".",y
+61115e19812b0c9bd2ba8024,red,red,e,space,2.9384,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+61115e19812b0c9bd2ba8024,y,y,y,space,4.4578,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61115e19812b0c9bd2ba8024,green,green,u,space,1.6554,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61115e19812b0c9bd2ba8024,k,k,k,space,5.8983,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61115e19812b0c9bd2ba8024,NA,NA,NA,space,0.8066,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+61115e19812b0c9bd2ba8024,y,y,y,space,3.0851,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61115e19812b0c9bd2ba8024,red,red,e,space,1.3816,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61223be51cadc395981ee36f,y,y,y,space,16.689,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61223be51cadc395981ee36f,fair,fair,fair,space,6.727,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61223be51cadc395981ee36f,y,y,y,space,6.953,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61223be51cadc395981ee36f,warm,warm,warm,space,3.262,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61223be51cadc395981ee36f,y,y,y,space,5.256,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+61223be51cadc395981ee36f,red,red,e,space,2.696,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+61223be51cadc395981ee36f,y,y,y,space,2.659,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61223be51cadc395981ee36f,green,green,u,space,3.371,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61223be51cadc395981ee36f,n,n,n,space,3.892,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61223be51cadc395981ee36f,green,green,u,space,7.212,0,9,9,9,1,"Which colour almost always occurred with """"high""""?  Type the response key you pressed for that particular colour""",u
+61223be51cadc395981ee36f,no,no,n,space,2.478,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61223be51cadc395981ee36f,red,red,e,space,1.51,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5c8ec442bda58f00125002a3,n,n,n,space,13.3083,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5c8ec442bda58f00125002a3,even,even,even,space,14.1674,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5c8ec442bda58f00125002a3,k,k,k,space,9.0143,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5c8ec442bda58f00125002a3,NA,NA,NA,space,19.1912,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5c8ec442bda58f00125002a3,k,k,k,space,6.9845,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5c8ec442bda58f00125002a3,red,red,e,space,7.7176,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5c8ec442bda58f00125002a3,k,k,k,space,2.3742,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5c8ec442bda58f00125002a3,red,red,e,space,5.2702,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5c8ec442bda58f00125002a3,k,k,k,space,4.8845,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5c8ec442bda58f00125002a3,green,green,u,space,2.2677,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5c8ec442bda58f00125002a3,k,k,k,space,3.4512,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5c8ec442bda58f00125002a3,u,u,u,space,8.4906,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+611d44cef2f22947cd3ccafc,y,y,y,space,15.1971,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+611d44cef2f22947cd3ccafc,even,even,even,space,4.8286,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+611d44cef2f22947cd3ccafc,n,n,n,space,3.3499,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+611d44cef2f22947cd3ccafc,NA,NA,NA,space,2.5354,0,3,3,3,1,What do you think the word was? Type your answer,warm
+611d44cef2f22947cd3ccafc,y,y,y,space,7.0035,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+611d44cef2f22947cd3ccafc,high,high,k,space,2.8786,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+611d44cef2f22947cd3ccafc,y,y,y,space,3.8843,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611d44cef2f22947cd3ccafc,even,even,k,space,1.8885,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+611d44cef2f22947cd3ccafc,n,n,n,space,2.3429,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611d44cef2f22947cd3ccafc,NA,NA,NA,space,0.5984,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+611d44cef2f22947cd3ccafc,n,n,n,space,2.0734,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611d44cef2f22947cd3ccafc,e,e,e,space,13.7576,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+59960f1e004c4f0001cc863b,k,k,k,space,12.834,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+59960f1e004c4f0001cc863b,i,i,k,space,8.1927,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+59960f1e004c4f0001cc863b,i,i,k,space,1.6107,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+59960f1e004c4f0001cc863b,high,high,high,space,6.519,0,3,3,3,1,What do you think the word was? Type your answer,warm
+59960f1e004c4f0001cc863b,n,n,n,space,6.4606,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+59960f1e004c4f0001cc863b,n,n,k,space,7.1211,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+59960f1e004c4f0001cc863b,n,n,n,space,2.7513,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+59960f1e004c4f0001cc863b,n,n,k,space,1.2004,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+59960f1e004c4f0001cc863b,n,n,n,space,1.108,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+59960f1e004c4f0001cc863b,n,n,k,space,0.6275,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+59960f1e004c4f0001cc863b,n,n,n,space,2.6948,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+59960f1e004c4f0001cc863b,n,n,k,space,1.0107,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+6129f57199c7d49d085e7ded,N,N,n,space,12.8138,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6129f57199c7d49d085e7ded,Even,Even,even,space,8.0809,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+6129f57199c7d49d085e7ded,K,K,k,space,8.8649,0,2,2,2,1,"Do you think """"even"""" was always followed by a particular word? Type ""y"" for yes  ""n"" for no  and ""k"" in case you do not know.""",y
+6129f57199c7d49d085e7ded,even,even,even,space,23.4768,0,3,3,3,1,What do you think the word was? Type your answer,warm
+6129f57199c7d49d085e7ded,Y,Y,y,space,5.8248,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+6129f57199c7d49d085e7ded,red,red,e,space,2.5983,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+6129f57199c7d49d085e7ded,Y,Y,y,space,3.0889,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6129f57199c7d49d085e7ded,green,green,u,space,2.417,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+6129f57199c7d49d085e7ded,k,k,k,space,5.3693,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6129f57199c7d49d085e7ded,red,red,e,space,2.3564,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+6129f57199c7d49d085e7ded,k,k,k,space,2.9746,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6129f57199c7d49d085e7ded,green,green,u,space,2.1966,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5ba5662060f3d50001695491,n,n,n,space,34.3014,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5ba5662060f3d50001695491,fair,fair,fair,space,7.4929,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5ba5662060f3d50001695491,n,n,n,space,20.4442,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5ba5662060f3d50001695491,warm,warm,warm,space,5.2059,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5ba5662060f3d50001695491,y,y,y,space,4.9267,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5ba5662060f3d50001695491,red,red,e,space,7.9831,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5ba5662060f3d50001695491,y,y,y,space,4.2545,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ba5662060f3d50001695491,green,green,u,space,1.8533,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5ba5662060f3d50001695491,n,n,n,space,12.9556,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ba5662060f3d50001695491,NA,NA,NA,space,4.5052,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5ba5662060f3d50001695491,n,n,n,space,4.7574,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ba5662060f3d50001695491,NA,NA,NA,space,18.0903,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61295df3536bbe9ac495000e,y,y,y,space,9.006,0,0,0,0,1,"Do you think """"high"""" was always followed by a particular word? Type """"y"""" for yes  ""n"" for no  and """"k"""" in case you do not know.""",y
+61295df3536bbe9ac495000e,even,even,even,space,12.665,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61295df3536bbe9ac495000e,k,k,k,space,6.695,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61295df3536bbe9ac495000e,unsure,unsure,k,space,4.346,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61295df3536bbe9ac495000e,y,y,y,space,6.42,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+61295df3536bbe9ac495000e,red,red,e,space,2.117,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+61295df3536bbe9ac495000e,y,y,y,space,3.203,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61295df3536bbe9ac495000e,green,green,u,space,1.35,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61295df3536bbe9ac495000e,k,k,k,space,7.698,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61295df3536bbe9ac495000e,red,red,e,space,5.963,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+61295df3536bbe9ac495000e,k,k,k,space,4.777,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61295df3536bbe9ac495000e,green,green,u,space,2.012,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+602e1d9786b077907ed54b7c,y,y,y,space,22.7777,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+602e1d9786b077907ed54b7c,even,even,even,space,16.9927,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+602e1d9786b077907ed54b7c,n,n,n,space,7.4841,0,2,2,2,1,"Do you think """"even"""" was always followed by a particular word? Type """"y"""" for yes  ""n"" for no  and ""k"" in case you do not know.",y
+602e1d9786b077907ed54b7c,high,high,high,space,13.4823,0,3,3,3,1,What do you think the word was? Type your answer,warm
+602e1d9786b077907ed54b7c,y,y,y,space,7.5664,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+602e1d9786b077907ed54b7c,red,red,e,space,5.5056,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+602e1d9786b077907ed54b7c,y,y,y,space,3.6761,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+602e1d9786b077907ed54b7c,green,green,u,space,3.3991,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+602e1d9786b077907ed54b7c,n,n,n,space,13.641,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+602e1d9786b077907ed54b7c,red,red,e,space,9.3796,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+602e1d9786b077907ed54b7c,y,y,y,space,3.5253,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+602e1d9786b077907ed54b7c,green,green,u,space,2.6826,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+607e6b63e4ede68b0f1778ad,y,y,y,space,20.735,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+607e6b63e4ede68b0f1778ad,Fair,Fair,fair,space,7.05,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+607e6b63e4ede68b0f1778ad,k,k,k,space,30.78,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+607e6b63e4ede68b0f1778ad,high,high,high,space,18.664,0,3,3,3,1,What do you think the word was? Type your answer,warm
+607e6b63e4ede68b0f1778ad,n,n,n,space,12.446,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+607e6b63e4ede68b0f1778ad,red,red,e,space,6.317,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+607e6b63e4ede68b0f1778ad,n,n,n,space,5.214,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+607e6b63e4ede68b0f1778ad,u,u,u,space,8.345,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+607e6b63e4ede68b0f1778ad,n,n,n,space,3.98,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+607e6b63e4ede68b0f1778ad,u,u,u,space,10.03,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+607e6b63e4ede68b0f1778ad,n,n,n,space,5.373,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+607e6b63e4ede68b0f1778ad,e,e,e,space,2.932,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612e111ed09f912859fca976,k,k,k,space,11.663,0,0,0,0,1,"Do you think """"high"""" was always followed by a particular word? Type """"y"""" for yes  """"n"""" for no  and ""k"" in case you do not know.""",y
+612e111ed09f912859fca976,unsure,unsure,k,space,8.183,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612e111ed09f912859fca976,k,k,k,space,4.423,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612e111ed09f912859fca976,unsure,unsure,k,space,2.266,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612e111ed09f912859fca976,k,k,k,space,1.759,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612e111ed09f912859fca976,unsure,unsure,k,space,1.526,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612e111ed09f912859fca976,k,k,k,space,1.739,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612e111ed09f912859fca976,unsure,unsure,k,space,1.732,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612e111ed09f912859fca976,k,k,k,space,7.88,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612e111ed09f912859fca976,none,none,k,space,1.893,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612e111ed09f912859fca976,y,y,y,space,2.325,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612e111ed09f912859fca976,red,red,e,space,0.927,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+60fd139f32b8b8975b595695,n,n,n,space,19.5167,0,0,0,0,1,"Do you think """"high"""" was always followed by a particular word? Type """"y"""" for yes  ""n"" for no  and ""k"" in case you do not know.",y
+60fd139f32b8b8975b595695,fair,fair,fair,space,16.0228,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60fd139f32b8b8975b595695,y,y,y,space,7.1435,0,2,2,2,1,"Do you think """"even"""" was always followed by a particular word? Type """"y"""" for yes  ""n"" for no  and ""k"" in case you do not know.",y
+60fd139f32b8b8975b595695,high,high,high,space,9.746,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60fd139f32b8b8975b595695,n,n,n,space,10.0579,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60fd139f32b8b8975b595695,e,e,e,space,12.8284,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60fd139f32b8b8975b595695,n,n,n,space,9.238,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd139f32b8b8975b595695,u,u,u,space,5.8688,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60fd139f32b8b8975b595695,n,n,n,space,3.9962,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd139f32b8b8975b595695,u,u,u,space,7.1727,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+60fd139f32b8b8975b595695,n,n,n,space,4.5634,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd139f32b8b8975b595695,u,u,u,space,3.9395,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61125d94d9e3cbd5161326ab,n,n,n,space,13.4617,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61125d94d9e3cbd5161326ab,fair,fair,fair,space,9.6051,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61125d94d9e3cbd5161326ab,y,y,y,space,3.7268,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61125d94d9e3cbd5161326ab,warm,warm,warm,space,2.3672,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61125d94d9e3cbd5161326ab,n,n,n,space,6.4666,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+61125d94d9e3cbd5161326ab,red,red,e,space,4.5835,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+61125d94d9e3cbd5161326ab,y,y,y,space,3.0665,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61125d94d9e3cbd5161326ab,green,green,u,space,1.4437,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61125d94d9e3cbd5161326ab,k,k,k,space,3.7831,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61125d94d9e3cbd5161326ab,u,u,u,space,9.7938,0,9,9,9,1,"Which colour almost always occurred with """"high""""?  Type the response key you pressed for that particular colour""",u
+61125d94d9e3cbd5161326ab,y,y,y,space,5.256,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61125d94d9e3cbd5161326ab,u,u,u,space,2.983,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+60fd3aa866ca3a64750a213d,n,n,n,space,11.8087,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60fd3aa866ca3a64750a213d,NA,NA,NA,space,6.4519,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60fd3aa866ca3a64750a213d,warm,warm,y,space,6.7133,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60fd3aa866ca3a64750a213d,warm,warm,warm,space,3.5532,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60fd3aa866ca3a64750a213d,y,y,y,space,4.2829,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60fd3aa866ca3a64750a213d,high,high,k,space,8.0648,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60fd3aa866ca3a64750a213d,k,k,k,space,3.207,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd3aa866ca3a64750a213d,green,green,u,space,10.8571,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60fd3aa866ca3a64750a213d,y,y,y,space,4.6367,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd3aa866ca3a64750a213d,red,red,e,space,4.5056,0,9,9,9,1,"Which colour almost always occurred with """"high""""?  Type the response key you pressed for that particular colour""",u
+60fd3aa866ca3a64750a213d,k,k,k,space,4.0462,0,10,10,10,1,"Do you think """"even"""" mostly appeared in a particular colour?. If yes then type ""y"" if no then type ""n"" and if you don't know type ""k"".",y
+60fd3aa866ca3a64750a213d,green,green,u,space,7.6909,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+60facf305efccd4612aca05b,k,k,k,space,29.20925,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60facf305efccd4612aca05b,I,I,k,space,21.13361,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60facf305efccd4612aca05b,k,k,k,space,20.25539,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60facf305efccd4612aca05b,idontunderstnadthisquestion,idontunderstnadthisquestion,k,space,110.06924,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60facf305efccd4612aca05b,y,y,y,space,9.17114,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60facf305efccd4612aca05b,red,red,e,space,3.07101,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60facf305efccd4612aca05b,y,y,y,space,2.69146,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60facf305efccd4612aca05b,green,green,u,space,5.49592,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60facf305efccd4612aca05b,k,k,k,space,3.491285,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60facf305efccd4612aca05b,idontknow,idontknow,k,space,12.47824,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+60facf305efccd4612aca05b,k,k,k,space,7.157545,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60facf305efccd4612aca05b,idontknow,idontknow,k,space,3.663315,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5ebc2405690bf0025dad6a1a,n,n,n,space,7.839,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5ebc2405690bf0025dad6a1a,NA,NA,NA,space,7.995,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5ebc2405690bf0025dad6a1a,n,n,n,space,2.97,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5ebc2405690bf0025dad6a1a,NA,NA,NA,space,3.296,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5ebc2405690bf0025dad6a1a,n,n,n,space,2.83,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5ebc2405690bf0025dad6a1a,red,red,e,space,3.799,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5ebc2405690bf0025dad6a1a,n,n,n,space,3.605,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ebc2405690bf0025dad6a1a,green,green,u,space,7.689,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5ebc2405690bf0025dad6a1a,n,n,n,space,2.409,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ebc2405690bf0025dad6a1a,NA,NA,NA,space,3.838,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5ebc2405690bf0025dad6a1a,n,n,n,space,2.295,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ebc2405690bf0025dad6a1a,NA,NA,NA,space,1.755,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612f7d53264293791722f9ba,k,k,k,space,9.2155,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612f7d53264293791722f9ba,fair,fair,fair,space,4.2009,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612f7d53264293791722f9ba,k,k,k,space,5.152,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612f7d53264293791722f9ba,warm,warm,warm,space,6.8921,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612f7d53264293791722f9ba,y,y,y,space,4.2734,0,4,4,4,1,"Do you think """"warm"""" mostly appeared in a particular colour?. If yes then type ""y""  ""n"" for no and if you don't know type ""k"".",y
+612f7d53264293791722f9ba,red,red,e,space,1.0454,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612f7d53264293791722f9ba,y,y,y,space,2.9313,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f7d53264293791722f9ba,green,green,u,space,1.1427,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612f7d53264293791722f9ba,n,n,n,space,3.5822,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f7d53264293791722f9ba,green,green,u,space,5.0187,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612f7d53264293791722f9ba,k,k,k,space,3.1099,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612f7d53264293791722f9ba,red,red,e,space,0.7139,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612dc6da3af57682811cd2fe,n,n,n,space,42.2273,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612dc6da3af57682811cd2fe,note,note,k,space,29.7636,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612dc6da3af57682811cd2fe,k,k,k,space,8.2727,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612dc6da3af57682811cd2fe,NA,NA,NA,space,2.1544,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612dc6da3af57682811cd2fe,y,y,y,space,24.5312,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612dc6da3af57682811cd2fe,feeling,feeling,k,space,4.8922,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612dc6da3af57682811cd2fe,n,n,n,space,3.6147,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612dc6da3af57682811cd2fe,green,green,u,space,27.7049,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612dc6da3af57682811cd2fe,y,y,y,space,21.9505,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612dc6da3af57682811cd2fe,red,red,e,space,3.6992,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612dc6da3af57682811cd2fe,y,y,y,space,5.2665,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612dc6da3af57682811cd2fe,green,green,u,space,2.8295,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5ec5336a4067b0481a9670a6,n,n,n,space,6.7364,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5ec5336a4067b0481a9670a6,fair,fair,fair,space,13.3854,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5ec5336a4067b0481a9670a6,n,n,n,space,8.0809,0,2,2,2,1,"Do you think """"even"""" was always followed by a particular word? Type """"y"""" for yes  ""n"" for no  and ""k"" in case you do not know.",y
+5ec5336a4067b0481a9670a6,warm,warm,warm,space,4.4485,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5ec5336a4067b0481a9670a6,y,y,y,space,6.4865,0,4,4,4,1,"Do you think """"warm"""" mostly appeared in a particular colour?. If yes  then type ""y"" ""n"" for no and if you don't know type """"k"""".""",y
+5ec5336a4067b0481a9670a6,red,red,e,space,3.1306,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5ec5336a4067b0481a9670a6,green,green,k,space,4.6079,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ec5336a4067b0481a9670a6,u,u,u,space,13.9117,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5ec5336a4067b0481a9670a6,y,y,y,space,7.8865,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ec5336a4067b0481a9670a6,r,r,e,space,3.6527,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5ec5336a4067b0481a9670a6,k,k,k,space,5.8848,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ec5336a4067b0481a9670a6,NA,NA,NA,space,11.4845,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5e349c07e2790c468d9775aa,n,n,n,space,7.3523,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5e349c07e2790c468d9775aa,warm,warm,warm,space,5.5116,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5e349c07e2790c468d9775aa,n,n,n,space,8.288,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5e349c07e2790c468d9775aa,high,high,high,space,2.5245,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5e349c07e2790c468d9775aa,y,y,y,space,3.83,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5e349c07e2790c468d9775aa,red,red,e,space,1.499,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5e349c07e2790c468d9775aa,y,y,y,space,3.8136,0,6,6,6,1,"Do you think """"fair"""" mostly appeared in a particular colour?. If yes  then type ""y""  if no then type ""n"" and if you don't know type ""k"".",y
+5e349c07e2790c468d9775aa,greenv,greenv,u,space,1.5157,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5e349c07e2790c468d9775aa,n,n,n,space,3.9301,0,8,8,8,1,"Do you think """"high"""" mostly appeared in a particular colour?. If yes then type ""y""  if no then type ""n"" and if you don't know type ""k"".",y
+5e349c07e2790c468d9775aa,u,u,u,space,12.4394,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5e349c07e2790c468d9775aa,y,y,y,space,3.9302,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5e349c07e2790c468d9775aa,e,e,e,space,2.3815,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61157a054da6132f55aba8fb,y,y,y,space,7.894,0,0,0,0,1,"Do you think """"high"""" was always followed by a particular word? Type """"y"""" for yes  """"n"""" for no",y
+61157a054da6132f55aba8fb,fair,fair,fair,space,6.42,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61157a054da6132f55aba8fb,n,n,n,space,2.804,0,2,2,2,1,"Do you think """"even"""" was always followed by a particular word? Type """"y"""" for yes  """"n"""" for no  and """"k"""" in case you do not know.""",y
+61157a054da6132f55aba8fb,NA,NA,NA,space,3.872,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61157a054da6132f55aba8fb,y,y,y,space,1.939,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+61157a054da6132f55aba8fb,even,even,k,space,4.274,0,5,5,5,1,"Which colour almost always occurred with """"warm""""? Type the response key you pressed for that particular colour""",e
+61157a054da6132f55aba8fb,n,n,n,space,1.755,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61157a054da6132f55aba8fb,NA,NA,NA,space,2.06,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61157a054da6132f55aba8fb,y,y,y,space,2.73,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61157a054da6132f55aba8fb,fair,fair,k,space,1.438,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+61157a054da6132f55aba8fb,NA,NA,NA,space,1.974,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61157a054da6132f55aba8fb,NA,NA,NA,space,0.721,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+6124f25ca7419170b505d1c8,n,n,n,space,10.7521,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6124f25ca7419170b505d1c8,fair,fair,fair,space,10.7623,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+6124f25ca7419170b505d1c8,n,n,n,space,4.8012,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6124f25ca7419170b505d1c8,warm,warm,warm,space,5.0731,0,3,3,3,1,What do you think the word was? Type your answer,warm
+6124f25ca7419170b505d1c8,y,y,y,space,3.7164,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+6124f25ca7419170b505d1c8,red,red,e,space,2.0932,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+6124f25ca7419170b505d1c8,y,y,y,space,2.2402,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6124f25ca7419170b505d1c8,green,green,u,space,1.835,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+6124f25ca7419170b505d1c8,k,k,k,space,5.7845,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6124f25ca7419170b505d1c8,green,green,u,space,3.6705,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+6124f25ca7419170b505d1c8,k,k,k,space,4.4463,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6124f25ca7419170b505d1c8,red,red,e,space,1.1231,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+601d0060dcf3a802c8b70ebe,y,y,y,space,10.1298,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+601d0060dcf3a802c8b70ebe,warm,warm,warm,space,7.7036,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+601d0060dcf3a802c8b70ebe,k,k,k,space,3.1401,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+601d0060dcf3a802c8b70ebe,fair,fair,fair,space,6.2843,0,3,3,3,1,What do you think the word was? Type your answer,warm
+601d0060dcf3a802c8b70ebe,y,y,y,space,5.1841,0,4,4,4,1,"Do you think """"warm"""" mostly appeared in a particular colour?. If yes  then type """"y""""  """"n"""" for no and if you don't know type """"k"""".""",y
+601d0060dcf3a802c8b70ebe,red,red,e,space,2.1532,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+601d0060dcf3a802c8b70ebe,y,y,y,space,2.6342,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+601d0060dcf3a802c8b70ebe,green,green,u,space,1.318,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+601d0060dcf3a802c8b70ebe,k,k,k,space,6.6011,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+601d0060dcf3a802c8b70ebe,red,red,e,space,1.1689,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+601d0060dcf3a802c8b70ebe,k,k,k,space,3.1138,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+601d0060dcf3a802c8b70ebe,green,green,u,space,1.6533,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5eb02d8fb13f7b08dbb4b4f3,k,k,k,space,12.5659,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5eb02d8fb13f7b08dbb4b4f3,even,even,even,space,16.715,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5eb02d8fb13f7b08dbb4b4f3,n,n,n,space,12.3518,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5eb02d8fb13f7b08dbb4b4f3,high,high,high,space,10.3426,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5eb02d8fb13f7b08dbb4b4f3,n,n,n,space,10.7444,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5eb02d8fb13f7b08dbb4b4f3,e,e,e,space,20.4386,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5eb02d8fb13f7b08dbb4b4f3,n,n,n,space,12.3005,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5eb02d8fb13f7b08dbb4b4f3,u,u,u,space,10.5172,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5eb02d8fb13f7b08dbb4b4f3,y,y,y,space,11.3295,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5eb02d8fb13f7b08dbb4b4f3,e,e,e,space,6.9075,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5eb02d8fb13f7b08dbb4b4f3,y,y,y,space,7.5425,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5eb02d8fb13f7b08dbb4b4f3,u,u,u,space,3.4688,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612e98cbf2174138903b659d,n,n,n,space,13.7274,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612e98cbf2174138903b659d,even,even,even,space,10.0112,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612e98cbf2174138903b659d,n,n,n,space,5.1847,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612e98cbf2174138903b659d,warm,warm,warm,space,9.2606,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612e98cbf2174138903b659d,y,y,y,space,5.6864,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612e98cbf2174138903b659d,red,red,e,space,2.7441,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612e98cbf2174138903b659d,y,y,y,space,5.584,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612e98cbf2174138903b659d,green,green,u,space,3.8657,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612e98cbf2174138903b659d,y,y,y,space,4.0955,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612e98cbf2174138903b659d,red,red,e,space,1.9971,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612e98cbf2174138903b659d,y,y,y,space,2.7996,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612e98cbf2174138903b659d,green,green,u,space,1.9601,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612e862ac666ce032b4a82fa,n,n,n,space,13.741045,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612e862ac666ce032b4a82fa,warm,warm,warm,space,11.4024,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612e862ac666ce032b4a82fa,k,k,k,space,12.804315,0,2,2,2,1,"Do you think """"even"""" was always followed by a particular word? Type """"y"""" for yes  """"n"""" for no  and """"k"""" in case you do not know.""",y
+612e862ac666ce032b4a82fa,warm,warm,warm,space,4.033205,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612e862ac666ce032b4a82fa,y,y,y,space,5.43705,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612e862ac666ce032b4a82fa,e,e,e,space,6.355265,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612e862ac666ce032b4a82fa,y,y,y,space,3.34429,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612e862ac666ce032b4a82fa,u,u,u,space,1.994845,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612e862ac666ce032b4a82fa,n,n,n,space,3.211085,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612e862ac666ce032b4a82fa,e,e,e,space,6.69165,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612e862ac666ce032b4a82fa,y,y,y,space,12.010325,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612e862ac666ce032b4a82fa,e,e,e,space,2.291525,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+612bf1554c54b3b38f5c3861,y,y,y,space,31.575,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612bf1554c54b3b38f5c3861,y,y,k,space,28.49,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+612bf1554c54b3b38f5c3861,y,y,y,space,17.555,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+612bf1554c54b3b38f5c3861,even,even,even,space,4.64,0,3,3,3,1,What do you think the word was? Type your answer,warm
+612bf1554c54b3b38f5c3861,y,y,y,space,12.245,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+612bf1554c54b3b38f5c3861,red,red,e,space,17.435,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+612bf1554c54b3b38f5c3861,NA,NA,NA,space,5.6,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612bf1554c54b3b38f5c3861,green,green,u,space,9.285,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+612bf1554c54b3b38f5c3861,y,y,y,space,18.24,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612bf1554c54b3b38f5c3861,green,green,u,space,6.375,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+612bf1554c54b3b38f5c3861,n,n,n,space,10.92,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+612bf1554c54b3b38f5c3861,red,red,e,space,6.855,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+60fd29e1b87d1ce113c2fb5b,n,n,n,space,13.541,0,0,0,0,1,"Do you think """"high"""" was always followed by a particular word? Type """"y"""" for yes  """"n"""" for no  and """"k"""" in case you do not know.""",y
+60fd29e1b87d1ce113c2fb5b,n/a,n/a,k,space,6.581,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60fd29e1b87d1ce113c2fb5b,n,n,n,space,7.195,0,2,2,2,1,"Do you think """"even"""" was always followed by a particular word? Type """"y"""" for yes  """"n"""" for no  and """"k"""" in case you do not know.""",y
+60fd29e1b87d1ce113c2fb5b,n/a,n/a,k,space,2.262,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60fd29e1b87d1ce113c2fb5b,y,y,y,space,5.208,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60fd29e1b87d1ce113c2fb5b,e,e,e,space,6.685,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60fd29e1b87d1ce113c2fb5b,y,y,y,space,3.369,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd29e1b87d1ce113c2fb5b,u,u,u,space,1.367,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60fd29e1b87d1ce113c2fb5b,n,n,n,space,4.41,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd29e1b87d1ce113c2fb5b,NA,NA,NA,space,3.224,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+60fd29e1b87d1ce113c2fb5b,n,n,n,space,7.125,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd29e1b87d1ce113c2fb5b,NA,NA,NA,space,0.393,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+60d796b88e241f5f698a44e5,y,y,y,space,27.4948,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60d796b88e241f5f698a44e5,fair,fair,fair,space,18.9949,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60d796b88e241f5f698a44e5,n,n,n,space,5.0789,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60d796b88e241f5f698a44e5,warm,warm,warm,space,4.1569,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60d796b88e241f5f698a44e5,y,y,y,space,11.3323,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60d796b88e241f5f698a44e5,red,red,e,space,1.9578,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60d796b88e241f5f698a44e5,y,y,y,space,5.9265,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60d796b88e241f5f698a44e5,green,green,u,space,1.7399,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60d796b88e241f5f698a44e5,y,y,y,space,9.6764,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60d796b88e241f5f698a44e5,red,red,e,space,1.1109,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+60d796b88e241f5f698a44e5,y,y,y,space,7.016,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60d796b88e241f5f698a44e5,green,green,u,space,2.8421,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,8.6076,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6127bbbc3e72f2d3f7fc5f04,fair,fair,fair,space,9.7818,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,5.6738,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,0.8792,0,3,3,3,1,What do you think the word was? Type your answer,warm
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,2.1601,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,0.6591,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,0.7123,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,1.2796,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,1.02,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,2.2221,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,2.8631,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6127bbbc3e72f2d3f7fc5f04,k,k,k,space,1.3957,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+611b7b04e1bb142291d62819,n,n,n,space,28.2001,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+611b7b04e1bb142291d62819,fair,fair,fair,space,24.6277,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+611b7b04e1bb142291d62819,k,k,k,space,12.3176,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+611b7b04e1bb142291d62819,high,high,high,space,9.9856,0,3,3,3,1,What do you think the word was? Type your answer,warm
+611b7b04e1bb142291d62819,y,y,y,space,5.0853,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+611b7b04e1bb142291d62819,red,red,e,space,10.3927,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+611b7b04e1bb142291d62819,y,y,y,space,5.6589,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611b7b04e1bb142291d62819,green,green,u,space,5.3655,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+611b7b04e1bb142291d62819,y,y,y,space,5.8008,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611b7b04e1bb142291d62819,red,red,e,space,6.8836,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+611b7b04e1bb142291d62819,NA,NA,NA,space,5.9759,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611b7b04e1bb142291d62819,green,green,u,space,4.6657,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5f63c6f77a00cd11fc0d5113,y,y,y,space,20.7458,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5f63c6f77a00cd11fc0d5113,year,year,k,space,10.5564,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5f63c6f77a00cd11fc0d5113,k,k,k,space,15.4237,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5f63c6f77a00cd11fc0d5113,I,I,k,space,5.8645,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5f63c6f77a00cd11fc0d5113,dont,dont,k,space,3.0169,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5f63c6f77a00cd11fc0d5113,green,green,u,space,11.4907,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5f63c6f77a00cd11fc0d5113,n,n,n,space,6.5051,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5f63c6f77a00cd11fc0d5113,red,red,e,space,13.6483,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5f63c6f77a00cd11fc0d5113,y,y,y,space,15.3215,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5f63c6f77a00cd11fc0d5113,red,red,e,space,2.7029,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5f63c6f77a00cd11fc0d5113,y,y,y,space,5.0825,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5f63c6f77a00cd11fc0d5113,green,green,u,space,3.3731,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5e0cc93453e8464869af9218,n,n,n,space,7.652,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5e0cc93453e8464869af9218,I,I,k,space,6.941,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5e0cc93453e8464869af9218,n,n,n,space,7.77,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5e0cc93453e8464869af9218,k,k,k,space,4.439,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5e0cc93453e8464869af9218,n,n,n,space,4.92,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5e0cc93453e8464869af9218,n,n,k,space,2.158,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5e0cc93453e8464869af9218,n,n,n,space,2.534,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5e0cc93453e8464869af9218,n,n,k,space,1.03,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5e0cc93453e8464869af9218,n,n,n,space,4.787,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5e0cc93453e8464869af9218,n,n,k,space,2.074,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5e0cc93453e8464869af9218,n,n,n,space,2.234,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5e0cc93453e8464869af9218,n,n,k,space,1.497,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+6110ed9df30e409eeb72d188,y,y,y,space,64.7467,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6110ed9df30e409eeb72d188,warm,warm,warm,space,4.4176,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+6110ed9df30e409eeb72d188,y,y,y,space,3.9123,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6110ed9df30e409eeb72d188,warm,warm,warm,space,25.3985,0,3,3,3,1,What do you think the word was? Type your answer,warm
+6110ed9df30e409eeb72d188,y,y,y,space,5.8269,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+6110ed9df30e409eeb72d188,red,red,e,space,4.5335,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+6110ed9df30e409eeb72d188,y,y,y,space,5.193,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6110ed9df30e409eeb72d188,green,green,u,space,3.4003,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+6110ed9df30e409eeb72d188,k,k,k,space,8.4489,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6110ed9df30e409eeb72d188,green,green,u,space,7.5175,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+6110ed9df30e409eeb72d188,y,y,y,space,5.6177,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6110ed9df30e409eeb72d188,green,green,u,space,1.9157,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5ede762675927e0e45e258aa,y,y,y,space,11.3329,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5ede762675927e0e45e258aa,fair,fair,fair,space,8.4232,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5ede762675927e0e45e258aa,y,y,y,space,3.1499,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5ede762675927e0e45e258aa,warm,warm,warm,space,3.4927,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5ede762675927e0e45e258aa,n,n,n,space,5.2897,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5ede762675927e0e45e258aa,NA,NA,NA,space,4.8564,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5ede762675927e0e45e258aa,n,n,n,space,2.6843,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ede762675927e0e45e258aa,NA,NA,NA,space,0.7232,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5ede762675927e0e45e258aa,n,n,n,space,6.0131,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ede762675927e0e45e258aa,NA,NA,NA,space,1.1366,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5ede762675927e0e45e258aa,n,n,n,space,1.7046,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5ede762675927e0e45e258aa,NA,NA,NA,space,0.6781,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+602e81538e1eada036b78bf1,y,y,y,space,21.8848,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+602e81538e1eada036b78bf1,even,even,even,space,4.8588,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+602e81538e1eada036b78bf1,y,y,y,space,4.4337,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+602e81538e1eada036b78bf1,high,high,high,space,2.7217,0,3,3,3,1,What do you think the word was? Type your answer,warm
+602e81538e1eada036b78bf1,y,y,y,space,4.9094,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+602e81538e1eada036b78bf1,red,red,e,space,3.0698,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+602e81538e1eada036b78bf1,y,y,y,space,2.7314,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+602e81538e1eada036b78bf1,green,green,u,space,2.682,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+602e81538e1eada036b78bf1,y,y,y,space,4.3337,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+602e81538e1eada036b78bf1,red,red,e,space,3.6142,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+602e81538e1eada036b78bf1,y,y,y,space,2.3809,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+602e81538e1eada036b78bf1,green,green,u,space,2.2987,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5aeaa3b5d9f2be0001933e5b,n,n,n,space,10.722,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5aeaa3b5d9f2be0001933e5b,NA,NA,NA,space,7.103,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5aeaa3b5d9f2be0001933e5b,n,n,n,space,4.812,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5aeaa3b5d9f2be0001933e5b,NA,NA,NA,space,1.625,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5aeaa3b5d9f2be0001933e5b,y,y,y,space,6.299,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5aeaa3b5d9f2be0001933e5b,red,red,e,space,4.707,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5aeaa3b5d9f2be0001933e5b,y,y,y,space,3.418,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5aeaa3b5d9f2be0001933e5b,green,green,u,space,3.36,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5aeaa3b5d9f2be0001933e5b,k,k,k,space,17.2,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5aeaa3b5d9f2be0001933e5b,NA,NA,NA,space,1.603,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5aeaa3b5d9f2be0001933e5b,k,k,k,space,4.226,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5aeaa3b5d9f2be0001933e5b,NA,NA,NA,space,1.17,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61306cd5e03206acd208443d,n,n,n,space,19.5124,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61306cd5e03206acd208443d,what,what,k,space,7.8174,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61306cd5e03206acd208443d,n,n,n,space,5.4178,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61306cd5e03206acd208443d,there,there,k,space,8.5283,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61306cd5e03206acd208443d,y,y,y,space,9.7837,0,4,4,4,1,"Do you think """"warm"""" mostly appeared in a particular colour?. If yes  then type """"y""""  """"n"""" for no and if you don't know type """"k"""".""",y
+61306cd5e03206acd208443d,red,red,e,space,2.874,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+61306cd5e03206acd208443d,y,y,y,space,5.4507,0,6,6,6,1,"Do you think """"fair"""" mostly appeared in a particular colour?. If yes  then type """"y""""  if no then type """"n"""" and if you don't know type """"k"""".""",y
+61306cd5e03206acd208443d,green,green,u,space,2.2507,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61306cd5e03206acd208443d,k,k,k,space,18.1622,0,8,8,8,1,"Do you think """"high"""" mostly appeared in a particular colour?. If yes  then type """"y""""  if no then type """"n"""" and if you don't know type """"k"""".""",y
+61306cd5e03206acd208443d,NA,NA,NA,space,2.5421,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+61306cd5e03206acd208443d,y,y,y,space,4.4673,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61306cd5e03206acd208443d,red,red,e,space,4.0671,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+5e0ef2b8f9e75061824a17b0,n,n,n,space,10.0195,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5e0ef2b8f9e75061824a17b0,NA,NA,NA,space,6.6273,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+5e0ef2b8f9e75061824a17b0,n,n,n,space,2.8955,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+5e0ef2b8f9e75061824a17b0,NA,NA,NA,space,1.7159,0,3,3,3,1,What do you think the word was? Type your answer,warm
+5e0ef2b8f9e75061824a17b0,n,n,n,space,4.3934,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+5e0ef2b8f9e75061824a17b0,NA,NA,NA,space,3.6876,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+5e0ef2b8f9e75061824a17b0,n,n,n,space,1.7626,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5e0ef2b8f9e75061824a17b0,NA,NA,NA,space,0.5639,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+5e0ef2b8f9e75061824a17b0,n,n,n,space,2.6134,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5e0ef2b8f9e75061824a17b0,NA,NA,NA,space,1.1791,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+5e0ef2b8f9e75061824a17b0,n,n,n,space,1.9989,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+5e0ef2b8f9e75061824a17b0,NA,NA,NA,space,0.5484,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+611cc62c5a7c3b2545c981b9,NA,NA,NA,space,10.9136,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+611cc62c5a7c3b2545c981b9,warm,warm,warm,space,18.2961,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+611cc62c5a7c3b2545c981b9,k,k,k,space,4.1663,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+611cc62c5a7c3b2545c981b9,NA,NA,NA,space,3.8466,0,3,3,3,1,What do you think the word was? Type your answer,warm
+611cc62c5a7c3b2545c981b9,n,n,n,space,8.4765,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+611cc62c5a7c3b2545c981b9,NA,NA,NA,space,1.6589,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+611cc62c5a7c3b2545c981b9,n,n,n,space,3.9316,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611cc62c5a7c3b2545c981b9,red,red,e,space,10.348,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+611cc62c5a7c3b2545c981b9,y,y,y,space,3.0321,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611cc62c5a7c3b2545c981b9,red,red,e,space,4.3323,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+611cc62c5a7c3b2545c981b9,n,n,n,space,5.603,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+611cc62c5a7c3b2545c981b9,NA,NA,NA,space,7.7136,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+6129cf2466f7161a0d0d5bae,k,k,k,space,17.4212,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6129cf2466f7161a0d0d5bae,warm,warm,warm,space,12.8468,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+6129cf2466f7161a0d0d5bae,k,k,k,space,21.3608,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+6129cf2466f7161a0d0d5bae,warm,warm,warm,space,4.3669,0,3,3,3,1,What do you think the word was? Type your answer,warm
+6129cf2466f7161a0d0d5bae,y,y,y,space,7.1137,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+6129cf2466f7161a0d0d5bae,red,red,e,space,5.6483,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+6129cf2466f7161a0d0d5bae,y,y,y,space,6.6271,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6129cf2466f7161a0d0d5bae,green,green,u,space,4.1004,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+6129cf2466f7161a0d0d5bae,y,y,y,space,8.5029,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6129cf2466f7161a0d0d5bae,green,green,u,space,3.3746,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+6129cf2466f7161a0d0d5bae,n,n,n,space,10.2708,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+6129cf2466f7161a0d0d5bae,red,red,e,space,4.3456,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+61218e2b5c6a54b79b4849db,Green,Green,k,space,5.3885,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+61218e2b5c6a54b79b4849db,Green,Green,k,space,2.9684,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+61218e2b5c6a54b79b4849db,No,No,n,space,5.915,0,2,2,2,1,"Do you think """"even"""" was always followed by a particular word? Type """"y"""" for yes  """"n"""" for no  and """"k"""" in case you do not know.""",y
+61218e2b5c6a54b79b4849db,N/A,N/A,NA,space,3.778,0,3,3,3,1,What do you think the word was? Type your answer,warm
+61218e2b5c6a54b79b4849db,Yes,Yes,y,space,3.2234,0,4,4,4,1,"Do you think """"warm"""" mostly appeared in a particular colour?. If yes then type """"y""""  """"n"""" for no and if you don't know type """"k"""".""",y
+61218e2b5c6a54b79b4849db,reD,reD,e,space,0.892,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+61218e2b5c6a54b79b4849db,Yes,Yes,y,space,2.3653,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61218e2b5c6a54b79b4849db,Green,Green,u,space,3.557,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+61218e2b5c6a54b79b4849db,y,y,y,space,4.8731,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61218e2b5c6a54b79b4849db,green,green,u,space,1.454,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+61218e2b5c6a54b79b4849db,k,k,k,space,5.628,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+61218e2b5c6a54b79b4849db,NA,NA,NA,space,1.1048,0,11,11,11,1,"Which colour almost always occurred with """"even""""? Type the response key you pressed for that particular colour""",e
+60b5cbacd78980bbcd8ddd41,k,k,k,space,20.3284,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60b5cbacd78980bbcd8ddd41,Even,Even,even,space,12.5725,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60b5cbacd78980bbcd8ddd41,y,y,y,space,15.0406,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60b5cbacd78980bbcd8ddd41,High,High,high,space,8.9423,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60b5cbacd78980bbcd8ddd41,y,y,y,space,8.8741,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60b5cbacd78980bbcd8ddd41,Even,Even,k,space,3.0641,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60b5cbacd78980bbcd8ddd41,y,y,y,space,2.5147,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60b5cbacd78980bbcd8ddd41,warm,warm,k,space,1.3324,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60b5cbacd78980bbcd8ddd41,k,k,k,space,6.1116,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60b5cbacd78980bbcd8ddd41,e,e,e,space,10.3746,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+60b5cbacd78980bbcd8ddd41,k,k,k,space,4.8954,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60b5cbacd78980bbcd8ddd41,e,e,e,space,3.8468,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+60fd2c970b374eaafdee2566,y,y,y,space,14.3599,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60fd2c970b374eaafdee2566,fair,fair,fair,space,2.7631,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60fd2c970b374eaafdee2566,n,n,n,space,7.3359,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60fd2c970b374eaafdee2566,fair,fair,fair,space,14.2685,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60fd2c970b374eaafdee2566,y,y,y,space,6.4143,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60fd2c970b374eaafdee2566,red,red,e,space,3.9509,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60fd2c970b374eaafdee2566,y,y,y,space,3.4967,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd2c970b374eaafdee2566,u,u,u,space,13.7706,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60fd2c970b374eaafdee2566,y,y,y,space,4.6138,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd2c970b374eaafdee2566,e,e,e,space,2.0972,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+60fd2c970b374eaafdee2566,n,n,n,space,3.6309,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fd2c970b374eaafdee2566,u,u,u,space,5.0977,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+60fcf0f1b004a1a43dc3a7af,y,y,y,space,29.9882,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60fcf0f1b004a1a43dc3a7af,fair,fair,fair,space,4.9222,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60fcf0f1b004a1a43dc3a7af,y,y,y,space,15.3683,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60fcf0f1b004a1a43dc3a7af,warm,warm,warm,space,2.1455,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60fcf0f1b004a1a43dc3a7af,y,y,y,space,5.7942,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60fcf0f1b004a1a43dc3a7af,red,red,e,space,1.9267,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60fcf0f1b004a1a43dc3a7af,y,y,y,space,2.9118,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fcf0f1b004a1a43dc3a7af,green,green,u,space,2.2807,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60fcf0f1b004a1a43dc3a7af,y,y,y,space,12.4133,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fcf0f1b004a1a43dc3a7af,red,red,e,space,2.3667,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+60fcf0f1b004a1a43dc3a7af,k,k,k,space,2.8495,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fcf0f1b004a1a43dc3a7af,k,k,k,space,7.7153,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e
+60fcec6fe01f1f9fee1ae9d3,n,n,n,space,17.5322,0,0,0,0,1,"Do you think ""high"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60fcec6fe01f1f9fee1ae9d3,NA,NA,NA,space,19.0462,0,1,1,1,1,What do you think the word is? Type in your answer in the textbox,fair
+60fcec6fe01f1f9fee1ae9d3,n,n,n,space,15.2611,0,2,2,2,1,"Do you think ""even"" was always followed by a particular word? Type ""y"" for yes, ""n"" for no, and ""k"" in case you do not know.",y
+60fcec6fe01f1f9fee1ae9d3,NA,NA,NA,space,1.1159,0,3,3,3,1,What do you think the word was? Type your answer,warm
+60fcec6fe01f1f9fee1ae9d3,y,y,y,space,5.0974,0,4,4,4,1,"Do you think ""warm"" mostly appeared in a particular colour?. If yes, then type ""y"", ""n"" for no and if you don't know type ""k"".",y
+60fcec6fe01f1f9fee1ae9d3,red,red,e,space,3.1243,0,5,5,5,1,"Which colour almost always occurred with ""warm""? Type the response key you pressed for that particular colour",e
+60fcec6fe01f1f9fee1ae9d3,y,y,y,space,3.0973,0,6,6,6,1,"Do you think ""fair"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fcec6fe01f1f9fee1ae9d3,green,green,u,space,5.7589,0,7,7,7,1,"Which colour almost always occurred with ""fair""?  Type the response key you pressed for that particular colour",u
+60fcec6fe01f1f9fee1ae9d3,n,n,n,space,2.8114,0,8,8,8,1,"Do you think ""high"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fcec6fe01f1f9fee1ae9d3,NA,NA,NA,space,2.7905,0,9,9,9,1,"Which colour almost always occurred with ""high""?  Type the response key you pressed for that particular colour",u
+60fcec6fe01f1f9fee1ae9d3,n,n,n,space,2.8596,0,10,10,10,1,"Do you think ""even"" mostly appeared in a particular colour?. If yes, then type ""y"", if no then type ""n"" and if you don't know type ""k"".",y
+60fcec6fe01f1f9fee1ae9d3,NA,NA,NA,space,0.862,0,11,11,11,1,"Which colour almost always occurred with ""even""? Type the response key you pressed for that particular colour",e

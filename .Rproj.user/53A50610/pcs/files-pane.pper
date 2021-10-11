@@ -5,5 +5,9 @@
             "ascending": true
         }
     ],
+<<<<<<< HEAD
     "path": "D:/PhD/Experiments/Sensory Pre conditioning/Exp1_SPC/Analysis/Data"
+=======
+    "path": "H:/Sensory Pre conditioning/Exp1_SPC/Analysis"
+>>>>>>> 0758a3e9d64e5469677c3fd193c571ddc1e064d6
 }
