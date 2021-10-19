@@ -46,7 +46,7 @@ Exp1data %>% count(PROLIFIC_PID)
 #### DATA PREPARATION 
 
 - Unnecessary columns are removed from the main dataframe
-- The Reaction Time columns are saved again such that the values from Phase 1 (Saved as SSResp.rt) and values from Phase 2 and 3 (saved as REsponse.rt) are combined into one column named RT_Trials. So a dummy variable is created to identify rows with Phase 1 RT and Phase2&3 RT to later combine together as RT_Trials.
+- The Reaction Time columns are saved again such that the values from Phase 1 (Saved as SSResp.rt) and values from Phase 2 and 3 (saved as Response.rt) are combined into one column named RT_Trials. So a dummy variable is created to identify rows with Phase 1 RT and Phase2&3 RT to later combine together as RT_Trials.
 - Similar process is done for Accuracy
 - Error Rate column is created
 
@@ -333,7 +333,7 @@ valmain3er <- ggplot(subset(Exp1_phase3.1, StimulusType == "S2-R Transfer"), aes
   theme(text = element_text(size = 20))
 
 Phase31_s2 <- ((valmain3)+(valmain3er))+
-  plot_annotation(tag_levels = "A", title = "Phase 3.1: S2 Transfer")+
+  plot_annotation(tag_levels = "A", title = "Phase 3.1: S2 Contingency")+
   plot_layout(guides = "collect")&theme_classic()
 
 Phase31_s2
@@ -357,8 +357,8 @@ anova31RT <- ezANOVA(data = Exp1_phase3.1,
                    wid = PROLIFIC_PID,
                    within = .(Validity,StimulusType),
                    detailed = TRUE) 
-pander(anova_out(anova31RT), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
-anova_out(anova31RT)
+pander((anova31RT), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
+
 
 mean3_1 <- summarySEwithin(Exp1_phase3.1, measurevar= "RT", withinvars=c("Validity","StimulusType"), idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
 
@@ -389,7 +389,7 @@ anova31ER <- ezANOVA(data = Exp1_phase3.1,
                    wid = PROLIFIC_PID,
                    within = .(Validity,StimulusType),
                    detailed = TRUE) 
-pander(anova_out(anova31ER), style = "rmarkdown", caption = "ANOVA(ER) for Phase 3.1 transfer")
+pander((anova31ER), style = "rmarkdown", caption = "ANOVA(ER) for Phase 3.1 transfer")
 
 
 mean3_1er <- summarySEwithin(Exp1_phase3.1, measurevar="ER", withinvars=c("Validity","StimulusType"),
@@ -412,9 +412,10 @@ Phase31_transfer <- (inter3.1+inter3.1er)+
 Phase31_transfer
 
 ```
+
 #### Differences per Stimulus Type
 
-1. For S1 the CLeffect in RT is not significant $t = -1.14, p = 0.87$ but in the ER it is significant $t = 1.97, p = 0.026$.
+1. For S1 the CL effect in RT is not significant $t = -1.14, p = 0.87$ but in the ER it is significant $t = 1.97, p = 0.026$.
 
 Signs of this could also be spotted in the plot where in ER the trend towards a CL effect for S1 is visible. However it is likely that this is a chance finding and more in depth analysis needs to be done
 
@@ -449,7 +450,7 @@ anova3.2RT <- ezANOVA(data = Exp1_phase3.2,
                       wid = PROLIFIC_PID,
                       within = .(Validity,StimulusType),
                       detailed = TRUE)
-pander(anova_out(anova3.2RT), style = "rmarkdown", caption = "ANOVA:RT for 3.2 transfer")
+pander((anova3.2RT), style = "rmarkdown", caption = "ANOVA:RT for 3.2 transfer")
 
 
 mean3.2 <- summarySEwithin(Exp1_phase3.2, measurevar= "RT", withinvars=c("Validity","StimulusType"),idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
@@ -482,7 +483,7 @@ anova32ER <- ezANOVA(data = Exp1_phase3.2,
                    wid = PROLIFIC_PID,
                    within = .(Validity,StimulusType),
                    detailed = TRUE) 
-pander(anova_out(anova32ER), style = "rmarkdown", caption = "ANOVA:ER for 3.2 transfer")
+pander((anova32ER), style = "rmarkdown", caption = "ANOVA:ER for 3.2 transfer")
 
 
 mean3.2er <- summarySEwithin(Exp1_phase3.2, measurevar="ER", withinvars=c("Validity","StimulusType"),                               idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
@@ -513,17 +514,21 @@ The paired t tests results for each stimulus type will reveal the strength of th
 
 1. For S1, there is no significant difference in RT as well as ER
 
-2. For S2, both RT and ER show significant differences
 
 ```{r 3.2tt, message=FALSE, warning=FALSE}
 ## for S1
 
 pander(t.test(data = Exp1_phase3.2, RT~Validity,subset = (StimulusType == "S1-R Transfer"), paired = TRUE, alternative = "greater"), style = 'rmarkdown', caption = "t test, RT showing differences between valid and invalid trials for S1 in Phase 3.2-excluding outliers")
 pander(t.test(data = Exp1_phase3.2, ER~Validity,subset = (StimulusType == "S1-R Transfer"), paired = TRUE, alternative = "greater"), style = 'rmarkdown', caption = "t test, ER showing differences between valid and invalid trials for S1 in Phase 3.2")
+```
 
+
+2. For S2, both RT and ER show significant differences
+
+```{r 3.2tts2,message=FALSE,warning=FALSE}
 ## For S2
-pander(t.test(data = Exp1_phase3.2, RT~Validity,subset = (StimulusType == "S2-R Transfer"), paired = TRUE, alternative = "greater"), style = 'rmarkdown', caption = "t test, RT showing differences between valid and invalid trials for S1 in Phase 3.2-excluding outliers")
-pander(t.test(data = Exp1_phase3.2, ER~Validity,subset = (StimulusType == "S2-R Transfer"), paired = TRUE, alternative = "greater"), style = 'rmarkdown', caption = "t test, ER showing differences between valid and invalid trials for S1 in Phase 3.2")
+pander(t.test(data = Exp1_phase3.2, RT~Validity,subset = (StimulusType == "S2-R Transfer"), paired = TRUE, alternative = "greater"), style = 'rmarkdown', caption = "t test, RT showing differences between valid and invalid trials for S2 in Phase 3.2-excluding outliers")
+pander(t.test(data = Exp1_phase3.2, ER~Validity,subset = (StimulusType == "S2-R Transfer"), paired = TRUE, alternative = "greater"), style = 'rmarkdown', caption = "t test, ER showing differences between valid and invalid trials for S2 in Phase 3.2")
 
 
 ```
@@ -533,6 +538,8 @@ pander(t.test(data = Exp1_phase3.2, ER~Validity,subset = (StimulusType == "S2-R 
 ### Thoughts
 
 1. It is possible that the contingency relation between S1-S2 became extinct with time, as participants might have unlearnt. As shown by [(Schmidt,Crump & Besner,2007)](https://linkinghub.elsevier.com/retrieve/pii/S1053810009002025) the contingencies can rapidly go extinct and in this case the relation with S2 could have been overwritten with R
+
+    * Could try second order conditioning by switching Phase 1 and Phase 2
 
 2. Possible memory load which was also mentioned in the Schmidt et al., (2007) that there might be more memory resources that makes the encoding/retrieval of the contingency weaker
 
@@ -578,7 +585,7 @@ These involve both the y/n questions as well as the typed answers for the stimul
 These values were then merged to the aggregate files from Phase 3.1 and Phase 3.2 to check for transfer effects and were split intp three aggregate files depending on the type of awareness
 
 
-```{r}
+```{r aware, message=FALSE, warning=FALSE}
 Exp1Aware <- read_csv(here("Data","Exp1AwarenessRecoded.csv"))
 
 Exp1Aware <- Exp1Aware %>% 
@@ -614,13 +621,20 @@ AwareSummary %>%
 AwareSummary <- AwareSummary %>% 
   mutate(AwarenessLevel = ifelse(TotalAcc >=2, "Aware","Unaware"))
 
+#finding participants who have all types of awareness
 ppall3<-AwareSummary %>% 
   subset(AwarenessLevel=="Aware") %>% count(PROLIFIC_PID)
 ppall3 <- ppall3 %>% filter(n == 3)
 ppall3 <- ppall3$PROLIFIC_PID
 
+kable(ppall3, caption = "List of participants who had all kinds of awareness (N = 15)")
+AwareSummary %>% group_by(AwareType,AwarenessLevel) %>% count() %>% kable(caption = "Number of participants with awareness")
+
+#merging with agg 3.1 and agg 3.2
 Exp1_phase3.1_A <- merge(Exp1_phase3.1,AwareSummary, by = "PROLIFIC_PID")
 Exp1_phase3.2_A <- merge(Exp1_phase3.2,AwareSummary, by = "PROLIFIC_PID")
+
+#only keeping pps with all awareness
 Exp1_phase3.1_3A <- Exp1_phase3.1 %>% filter(PROLIFIC_PID %in% ppall3)
 Exp1_phase3.2_3A <- Exp1_phase3.2 %>% filter(PROLIFIC_PID %in% ppall3)
 
@@ -655,6 +669,7 @@ Exp1_phase3.2_S1 <- Exp1_phase3.2_A %>%
 ### 1. When you have S-2 Awareness
 ### RT
 
+No effect of awareness. Similar to previous results that show that contingency learning is present even when subjects do not notice them.
 
 ```{r anovaA31, message=FALSE, warning=FALSE}
 
@@ -664,7 +679,7 @@ anova31RT_A_S2 <- ezANOVA(data = Exp1_phase3.1_S2,
                    within = .(Validity,StimulusType),
                    between = AwarenessLevel,
                    detailed = TRUE) 
-pander(anova_out(anova31RT_A_S2), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
+pander((anova31RT_A_S2), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
 
 S2_31 <- ggplot(Exp1_phase3.1_S2, aes(x=StimulusType, y=RT,fill = Validity))+
   geom_bar(stat = "summary", fun = "mean",position = position_dodge())+
@@ -687,7 +702,7 @@ anova31ER_A_S2 <- ezANOVA(data = Exp1_phase3.1_S2,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova31ER_A_S2), style = "rmarkdown", caption = "ANOVA (ER): for Phase 3.1 across stimulus type")
+pander((anova31ER_A_S2), style = "rmarkdown", caption = "ANOVA (ER): for Phase 3.1 across stimulus type")
 
 
 S2_31_er <- ggplot(Exp1_phase3.1_S2, aes(x=StimulusType, y=ER,fill = Validity))+
@@ -707,6 +722,8 @@ S2_31_er <- ggplot(Exp1_phase3.1_S2, aes(x=StimulusType, y=ER,fill = Validity))+
 
 ### RT
 
+No modulation of awareness
+
 ```{r warning=FALSE, message=FALSE}
 anova31RT_A_SS <- ezANOVA(data = Exp1_phase3.1_SS,
                    dv = RT,
@@ -714,7 +731,7 @@ anova31RT_A_SS <- ezANOVA(data = Exp1_phase3.1_SS,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova31RT_A_SS), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type based on SS AWareness")
+pander((anova31RT_A_SS), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type based on SS AWareness")
 
 SS_31 <- ggplot(Exp1_phase3.1_SS, aes(x=StimulusType, y=RT,fill = Validity))+
   geom_bar(stat = "summary", fun = "mean",position = position_dodge())+
@@ -731,6 +748,8 @@ SS_31 <- ggplot(Exp1_phase3.1_SS, aes(x=StimulusType, y=RT,fill = Validity))+
 
 ### ER
 
+No effect
+
 ```{r warning=FALSE, message=FALSE}
 anova31ER_A_SS <- ezANOVA(data = Exp1_phase3.1_SS,
                    dv = ER,
@@ -738,7 +757,7 @@ anova31ER_A_SS <- ezANOVA(data = Exp1_phase3.1_SS,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova31ER_A_SS), style = "rmarkdown", caption = "ANOVA (ER): for Phase 3.1 across stimulus type")
+pander((anova31ER_A_SS), style = "rmarkdown", caption = "ANOVA (ER): for Phase 3.1 across stimulus type")
 
 
 SS_31_er <- ggplot(Exp1_phase3.1_SS, aes(x=StimulusType, y=ER,fill = Validity))+
@@ -765,7 +784,7 @@ anova31RT_A_S1 <- ezANOVA(data = Exp1_phase3.1_S1,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova31RT_A_S1), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type based on S1 AWareness")
+pander((anova31RT_A_S1), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type based on S1 AWareness")
 
 S1_31 <- ggplot(Exp1_phase3.1_S1, aes(x=StimulusType, y=RT,fill = Validity))+
   geom_bar(stat = "summary", fun = "mean",position = position_dodge())+
@@ -790,7 +809,7 @@ anova31ER_A_S1 <- ezANOVA(data = Exp1_phase3.1_S1,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova31ER_A_S1), style = "rmarkdown", caption = "ANOVA (ER): for Phase 3.1 across stimulus type")
+pander((anova31ER_A_S1), style = "rmarkdown", caption = "ANOVA (ER): for Phase 3.1 across stimulus type")
 
 S1_31_er <- ggplot(Exp1_phase3.1_S1, aes(x=StimulusType, y=ER,fill = Validity))+
   geom_bar(stat = "summary", fun = "mean",position = position_dodge())+
@@ -813,14 +832,22 @@ S1_31_er <- ggplot(Exp1_phase3.1_S1, aes(x=StimulusType, y=ER,fill = Validity))+
 ```{r}
 RT3A <- (S2_31 + SS_31 + S1_31)+
   plot_annotation(tag_levels = "A", title = "Mean RT: performance based on three kinds of awareness")+
-  plot_layout(guides = "collect")&theme_classic()
+  plot_layout(guides = "collect")&
+  theme_classic()&
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))&
+  scale_x_discrete(labels = c("S1-R Transfer" = "S1-R", "S2-R Transfer" = "S2-R"))
 RT3A
 
 ER3A <- (S2_31_er + SS_31_er + S1_31_er)+
   plot_annotation(tag_levels = "A", title = "Mean ER: performance based on three kinds of awareness")+
-  plot_layout(guides = "collect")&theme_classic()
+  plot_layout(guides = "collect")&
+  theme_classic()&
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))&
+  scale_x_discrete(labels = c("S1-R Transfer" = "S1-R", "S2-R Transfer" = "S2-R"))
 ER3A 
 ```
+
+### When analysing only participants with all types of awareness
 
 Only checking for partcipants who had awareness in all categories
 
@@ -830,15 +857,41 @@ anova_3.1_3A <- ezANOVA(data = Exp1_phase3.1_3A,
                    wid = PROLIFIC_PID,
                    within = .(Validity,StimulusType),
                    detailed = TRUE)
-anova_out(anova_3.1_3A)
+pander(anova_3.1_3A, style = "rmarkdown", caption = "ANOVA: RT, for participants who are aware of all associations")
 
-ggplot(data = Exp1_phase3.1_3A, aes(x = StimulusType, y = RT, fill = Validity))+
+rt_3.1_3A <- ggplot(data = Exp1_phase3.1_3A, aes(x = StimulusType, y = RT, fill = Validity))+
   geom_bar(stat = "summary", fun = "mean", position = position_dodge())+
   scale_fill_manual(values = c("midnightblue","skyblue"))+
   coord_cartesian(ylim = c(400,600))+
-  labs(title = "Transfer in Phase 3.1 for participants with all types of awareness",
+  labs(title = "Transfer in Phase 3.1 \n for Reaction time",
        xlab = "Stimulus Type",
        ylab = "Reaction Time")+theme_classic()
+
+anova_3.1_3A_er <- ezANOVA(data = Exp1_phase3.1_3A,
+                   dv = ER,
+                   wid = PROLIFIC_PID,
+                   within = .(Validity,StimulusType),
+                   detailed = TRUE)
+pander(anova_3.1_3A_er, style = "rmarkdown", caption = "ANOVA: ER, for participants who are aware of all associations")
+
+er_3.1_3A <- ggplot(data = Exp1_phase3.1_3A, aes(x = StimulusType, y = ER, fill = Validity))+
+  geom_bar(stat = "summary", fun = "mean", position = position_dodge())+
+  scale_fill_manual(values = c("midnightblue","skyblue"))+
+  coord_cartesian(ylim = c(0,0.15))+
+  labs(title = "Transfer in Phase 3.1 \n for Error Rate",
+       xlab = "Stimulus Type",
+       ylab = "Error Rate")+theme_classic()
+
+
+Plot3.1_3A <- (rt_3.1_3A + er_3.1_3A)+
+  plot_annotation(tag_levels = "A", title = "Participants with all types of awareness: Phase 3.1")+
+  plot_layout(guides = "collect")&
+  theme_classic()
+
+Plot3.1_3A
+
+
+
 ```
 
 ## Phase 3.2
@@ -858,7 +911,7 @@ anova32RT_A_S2 <- ezANOVA(data = Exp1_phase3.2_S2,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova32RT_A_S2), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
+pander((anova32RT_A_S2), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
 
 S2_32 <- ggplot(Exp1_phase3.2_S2, aes(x=StimulusType, y=RT,fill = Validity))+
   geom_bar(stat = "summary", fun = "mean",position = position_dodge())+
@@ -876,6 +929,7 @@ S2_32 <- ggplot(Exp1_phase3.2_S2, aes(x=StimulusType, y=RT,fill = Validity))+
 
 ### ER
 
+There is a significant 3-way interaction but not in the expected direction
 
 ```{r message=FALSE, warning=FALSE}
 
@@ -885,7 +939,7 @@ anova32ER_A_S2 <- ezANOVA(data = Exp1_phase3.2_S2,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova32ER_A_S2), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.2 across stimulus type")
+pander((anova32ER_A_S2), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.2 across stimulus type")
 
 S2_32_er <- ggplot(Exp1_phase3.2_S2, aes(x=StimulusType, y=ER,fill = Validity))+
   geom_bar(stat = "summary", fun = "mean",position = position_dodge())+
@@ -910,7 +964,7 @@ anova32RT_A_SS <- ezANOVA(data = Exp1_phase3.2_SS,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova32RT_A_SS), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
+pander((anova32RT_A_SS), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
 
 SS_32 <- ggplot(Exp1_phase3.2_SS, aes(x=StimulusType, y=RT,fill = Validity))+
   geom_bar(stat = "summary", fun = "mean",position = position_dodge())+
@@ -933,7 +987,7 @@ anova32ER_A_SS <- ezANOVA(data = Exp1_phase3.2_SS,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova32ER_A_SS), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
+pander((anova32ER_A_SS), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
 
 SS_32_er <- ggplot(Exp1_phase3.2_SS, aes(x=StimulusType, y=ER,fill = Validity))+
   geom_bar(stat = "summary", fun = "mean",position = position_dodge())+
@@ -961,7 +1015,7 @@ anova32RT_A_S1 <- ezANOVA(data = Exp1_phase3.2_S1,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova32RT_A_S1), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
+pander((anova32RT_A_S1), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
 
 S1_32 <- ggplot(Exp1_phase3.2_S1, aes(x=StimulusType, y=RT,fill = Validity))+
   geom_bar(stat = "summary", fun = "mean",position = position_dodge())+
@@ -984,7 +1038,7 @@ anova32ER_A_S1 <- ezANOVA(data = Exp1_phase3.2_S1,
                    within = .(Validity,StimulusType),
                    between = .(AwarenessLevel),
                    detailed = TRUE) 
-pander(anova_out(anova32ER_A_S1), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
+pander((anova32ER_A_S1), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
 
 S1_32_er <- ggplot(Exp1_phase3.2_S1, aes(x=StimulusType, y=ER,fill = Validity))+
   geom_bar(stat = "summary", fun = "mean",position = position_dodge())+
@@ -1005,31 +1059,67 @@ S1_32_er <- ggplot(Exp1_phase3.2_S1, aes(x=StimulusType, y=ER,fill = Validity))+
 ```{r}
 RT3A_2 <- (S2_32 + SS_32 + S1_32)+
   plot_annotation(tag_levels = "A", title = "Mean RT: performance based on three kinds of awareness")+
-  plot_layout(guides = "collect")&theme_classic()
+  plot_layout(guides = "collect")&
+  theme_classic()&
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))&
+  scale_x_discrete(labels = c("S1-R Transfer" = "S1-R", "S2-R Transfer" = "S2-R"))
 RT3A_2
 
 ER3A_2 <- (S2_32_er + SS_32_er + S1_32_er)+
   plot_annotation(tag_levels = "A", title = "Mean ER: performance based on three kinds of awareness")+
-  plot_layout(guides = "collect")&theme_classic()
+  plot_layout(guides = "collect")&
+  theme_classic()&
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))&
+  scale_x_discrete(labels = c("S1-R Transfer" = "S1-R", "S2-R Transfer" = "S2-R"))
 ER3A_2 
 ```
 
+### Analyzing participants who showed all types of awareness
 
-```{r}
+
+```{r warning=FALSE, message=FALSE}
 anova_3.2_3A <- ezANOVA(data = Exp1_phase3.2_3A,
                    dv = RT,
                    wid = PROLIFIC_PID,
                    within = .(Validity,StimulusType),
                    detailed = TRUE)
-anova_out(anova_3.2_3A)
+pander(anova_3.2_3A, style = "rmarkdown", caption = "ANOVA: RT for participants with all types of awareness")
 
-ggplot(data = Exp1_phase3.2_3A, aes(x = StimulusType, y = RT, fill = Validity))+
+rt_3.2_3A <- ggplot(data = Exp1_phase3.2_3A, aes(x = StimulusType, y = RT, fill = Validity))+
   geom_bar(stat = "summary", fun = "mean", position = position_dodge())+
   scale_fill_manual(values = c("midnightblue","skyblue"))+
   coord_cartesian(ylim = c(400,600))+
-  labs(title = "Transfer in Phase 3.2 for participants with all types of awareness",
+  labs(title = "Transfer in Phase 3.2 \n for Reaction Time",
        xlab = "Stimulus Type",
        ylab = "Reaction Time")+theme_classic()
+
+anova_3.2_3A_er <- ezANOVA(data = Exp1_phase3.2_3A,
+                   dv = ER,
+                   wid = PROLIFIC_PID,
+                   within = .(Validity,StimulusType),
+                   detailed = TRUE)
+pander(anova_3.2_3A_er, style = "rmarkdown", caption = "ANOVA: ER for participants with all types of awareness")
+
+er_3.2_3A <- ggplot(data = Exp1_phase3.2_3A, aes(x = StimulusType, y = ER, fill = Validity))+
+  geom_bar(stat = "summary", fun = "mean", position = position_dodge())+
+  scale_fill_manual(values = c("midnightblue","skyblue"))+
+  coord_cartesian(ylim = c(0,0.15))+
+  labs(title = "Transfer in Phase 3.2 \n for Error Rate",
+       xlab = "Stimulus Type",
+       ylab = "Error Rate")+theme_classic()
+
+##plots
+
+Plot3.2 <- (rt_3.2_3A + er_3.2_3A)+
+  plot_annotation(tag_levels = "A", title = "Participants with all types of awareness")+
+  plot_layout(guides = "collect")&
+  theme_classic()
+
+Plot3.2
+
+  # theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))&
+  # scale_x_discrete(labels = c("S1-R Transfer" = "S1-R", "S2-R Transfer" = "S2-R"))
+
 ```
 
 # Exploratory
@@ -1056,16 +1146,16 @@ Exp1_3.1_block <- Exp1_3.1_block %>%
 ##Change to lme4 and use linear mixed effects for ANOVA
 
 ## Reaction Time
-anova31RT_b <- lmer(data = Exp1_3.1_block, RT~1+Validity*StimulusType*BlockNumber+ (1|PROLIFIC_PID))
+anova31RT_b <- lmer(data = Exp1_3.1_block, RT~1+Validity*StimulusType*BlockNumber+ (1+Validity*StimulusType*BlockNumber|PROLIFIC_PID))
 tab_model(anova31RT_b)
 
-pander(summary(anova31RT_b), style = "rmarkdown", capion = "ANOVA(RT) results including BlockNumber")
+#pander(summary(anova31RT_b), style = "rmarkdown", capion = "ANOVA(RT) results including BlockNumber")
 
 mean3_1_b <- summarySEwithin(Exp1_3.1_block, measurevar= "RT", withinvars=c("Validity","StimulusType","BlockNumber"), idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
 
 inter3.1b <- ggplot(mean3_1_b, aes(x=StimulusType, y=RT,fill = Validity))+
   geom_bar(stat = "identity",position = position_dodge())+
-  geom_errorbar(aes(ymin = RT - ci, ymax = RT + ci),width = .1, size = 1,position = position_dodge(.9))+
+  #geom_errorbar(aes(ymin = RT - ci, ymax = RT + ci),width = .1, size = 1,position = position_dodge(.9))+
   scale_fill_manual(values = c("midnightblue","skyblue"))+
   coord_cartesian(ylim = c(400,550))+
   ylab("ReactionTime (in ms)")+
@@ -1075,15 +1165,15 @@ inter3.1b <- ggplot(mean3_1_b, aes(x=StimulusType, y=RT,fill = Validity))+
 
 
 ## Error Rate
-anova31ER_b <- lmer(data = Exp1_3.1_block, ER~1+Validity*StimulusType*BlockNumber+ (1|PROLIFIC_PID))
+anova31ER_b <- lmer(data = Exp1_3.1_block, ER~1+Validity*StimulusType*BlockNumber+ (1+Validity*StimulusType*BlockNumber|PROLIFIC_PID))
 tab_model(anova31ER_b)
-pander(anova(anova31ER_b), style = "rmarkdown", capion = "ANOVA(ER) results including BlockNumber")
+#pander(summary(anova31ER_b), style = "rmarkdown", capion = "ANOVA(ER) results including BlockNumber")
 
 mean3_1_ber <- summarySEwithin(Exp1_3.1_block, measurevar= "ER", withinvars=c("Validity","StimulusType","BlockNumber"), idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
 
 inter3.1ber <- ggplot(mean3_1_ber, aes(x=StimulusType, y=ER,fill = Validity))+
   geom_bar(stat = "identity",position = position_dodge())+
-  geom_errorbar(aes(ymin = ER - ci, ymax = ER + ci),width = .1, size = 1,position = position_dodge(.9))+
+  #geom_errorbar(aes(ymin = ER - ci, ymax = ER + ci),width = .1, size = 1,position = position_dodge(.9))+
   scale_fill_manual(values = c("midnightblue","skyblue"))+
   coord_cartesian(ylim = c(0,0.15))+
   theme_classic()+
@@ -1093,16 +1183,18 @@ inter3.1ber <- ggplot(mean3_1_ber, aes(x=StimulusType, y=ER,fill = Validity))+
   theme(text = element_text(size = 20))
 
 
-plot3 <- (inter3.1b+inter3.1ber)+
+plot3.1Block <- (inter3.1b+inter3.1ber)+
   plot_annotation(tag_levels = "A", title = "Phase 3.1 per Block: mean of valid and invalid trials" )+
-  plot_layout(guides = "collect")&theme_classic()
-plot3
+  plot_layout(guides = "collect")&theme_classic()&
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))&
+  scale_x_discrete(labels = c("S1-R Transfer" = "S1-R", "S2-R Transfer" = "S2-R"))
+plot3.1Block
 
 ```
 
 ## Block analyses for Phase 3.2
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 
 Exp1_3.2_block <- Exp1data %>% 
   group_by(PROLIFIC_PID,Validity,Condition,BlockNumber) %>%
@@ -1111,11 +1203,15 @@ Exp1_3.2_block <- Exp1data %>%
             RT = mean(RT_io, na.rm = TRUE)) %>% 
   rename(StimulusType = Condition)
 
+anova32RT_b <- lmer(data = Exp1_3.2_block, RT~1+Validity*StimulusType*BlockNumber+ (1+Validity*StimulusType*BlockNumber|PROLIFIC_PID))
+tab_model(anova32RT_b)
+
+
 mean3_2_b <- summarySEwithin(Exp1_3.2_block, measurevar= "RT", withinvars=c("Validity","StimulusType","BlockNumber"), idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
 
 inter3.2b <- ggplot(mean3_2_b, aes(x=StimulusType, y=RT,fill = Validity))+
   geom_bar(stat = "identity",position = position_dodge())+
-  geom_errorbar(aes(ymin = RT - ci, ymax = RT + ci),width = .1, size = 1,position = position_dodge(.9))+
+  #geom_errorbar(aes(ymin = RT - ci, ymax = RT + ci),width = .1, size = 1,position = position_dodge(.9))+
   scale_fill_manual(values = c("midnightblue","skyblue"))+
   coord_cartesian(ylim = c(400,550))+
   ylab("ReactionTime (in ms)")+
@@ -1127,7 +1223,7 @@ mean3_2_ber <- summarySEwithin(Exp1_3.2_block, measurevar= "ER", withinvars=c("V
 
 inter3.2ber <- ggplot(mean3_2_ber, aes(x=StimulusType, y=ER,fill = Validity))+
   geom_bar(stat = "identity",position = position_dodge())+
-  geom_errorbar(aes(ymin = ER - ci, ymax = ER + ci),width = .1, size = 1,position = position_dodge(.9))+
+  #geom_errorbar(aes(ymin = ER - ci, ymax = ER + ci),width = .1, size = 1,position = position_dodge(.9))+
   scale_fill_manual(values = c("midnightblue","skyblue"))+
   coord_cartesian(ylim = c(0,0.15))+
   ylab("Error Rate")+
@@ -1135,10 +1231,58 @@ inter3.2ber <- ggplot(mean3_2_ber, aes(x=StimulusType, y=ER,fill = Validity))+
   facet_grid(.~BlockNumber)+
   theme(text = element_text(size = 20))
 
-Plot4 <- (inter3.2b+inter3.2ber)+
+Plot3.2Block <- (inter3.2b+inter3.2ber)+
   plot_annotation(tag_levels = "A", title = "Phase 3.2, per block: Mean of valid and invalid trials")+
-  plot_layout(guides = "collect")&theme_classic()
-Plot4
+  plot_layout(guides = "collect")&theme_classic()&
+  theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))&
+  scale_x_discrete(labels = c("S1-R Transfer" = "S1-R", "S2-R Transfer" = "S2-R"))
+Plot3.2Block
+
+```
+
+
+## Last Occurence Analysis
+
+```{r}
+Exp1data$SRB = NA
+
+Exp1data <- Exp1data %>% 
+  mutate(SRB = ifelse((Phase == 3.1 | Phase == 3.2)& Condition == "S1-R Transfer" & lag(Condition,1)=="S2-R Transfer","Probe-Transfer",NA)) %>% relocate(SRB)
+Exp1data %>% count(SRB)   
+
+Exp1data <- Exp1data %>% 
+  mutate(SRB = ifelse((Phase == 3.1 | Phase == 3.2)& Condition == "S2-R Transfer" & lag(Condition,1)=="S2-R Transfer","Probe-Same",SRB))
+Exp1data %>% count(SRB)
+
+Srbagg3.1 <- Exp1data %>% 
+  group_by(SRB,PROLIFIC_PID,Validity) %>% 
+  filter(Phase == 3.1) %>% 
+  summarise(ER= mean(ER,na.rm=TRUE),
+            RT = mean(RT_io, na.rm = TRUE)) %>% 
+  rename(StimulusType = SRB)
+Srbagg3.1 <- Srbagg3.1 %>% filter(Validity == "valid")
+
+srb31anova <- ezANOVA(data = Srbagg3.1,
+                   dv = RT,
+                   wid = PROLIFIC_PID,
+                   within = .(StimulusType),
+                   detailed = TRUE) 
+pander((srb31anova), style = "rmarkdown", caption = "ANOVA (RT): for Phase 3.1 across stimulus type")
+
+
+mean3_1 <- summarySEwithin(Exp1_phase3.1, measurevar= "RT", withinvars=c("Validity","StimulusType"), idvar="PROLIFIC_PID", na.rm=FALSE, conf.interval=.95)
+
+srb31.rt <- ggplot(Srbagg3.1, aes(x=StimulusType, y=RT))+
+  geom_bar(stat = "summary",fun = "mean",position = position_dodge())+
+  #geom_errorbar(aes(ymin = RT - ci, ymax = RT + ci),width = .1, size = 1,position = position_dodge(.9))+
+  scale_fill_manual(values = c("midnightblue","skyblue"))+
+  coord_cartesian(ylim = c(400,550))+
+  ggtitle("Valid and Invalid trials mean \n per Stimulus Type in Phase 3.1")+
+  theme_classic()+
+  ylab("ReactionTime (in ms)")+
+  xlab("StimulusType")+
+  theme(text = element_text(size = 20))
+srb31.rt
 
 ```
 
